@@ -8,6 +8,7 @@
     font-family: rubik;
     justify-content: space-between;
     align-items: center;
+
 }
 
 
@@ -23,6 +24,8 @@
 
 }
 
-.nombre_group {
+.teamgroup {
     height: 60px;
+    align-items: center;
+
 }
