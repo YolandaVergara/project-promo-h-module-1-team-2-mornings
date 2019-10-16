@@ -1,4 +1,84 @@
-<<<<<<< HEAD
+.header {
+    display: flex;
+    flex-direction: column;
+    /* Ahora está para Mobile, posteriormente tendremos que configurar que si pasa de tal medida X la pantalla se pase a Row */
+    background-color: #099d8d;
+    color: white;
+    font-size: 16px;
+    font-family: rubik;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: #14d9c4;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+
+}
+
+.teamgroup {
+    height: 60px;
+    align-items: center;
+
+}
+
+.hero {
+    height: 316px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /*pruebas de proyectos anteriores para ajustar imagen del hero*/
+    background-size: cover;
+    -webkit-box-pack: center;
+    position: relative;
+}
+
+.claim {
+    height: 80px;
+    width: 290px;
+    background-color: white;
+    font-family: OpenSans-Semibold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.team {
+    width: 320px;
+    height: 504px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.h2_team {
+    color: aqua;
+    font-family: Rubik-Medium;
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.descrip_team {
+    width: 290px;
+    height: 384px;
+    font-size: 16px;
+    font-family: OpenSans;
+    text-align: center;
+    line-height: 24px;
+    color: #54585a;
+}
+
 .foot {
     padding: 30px, 74px, 0px, 74px;
     display: flex;
@@ -46,80 +126,4 @@ ul {
 
 li {
     list-style: none;
-=======
-.header {
-    display: flex;
-    flex-direction: column;
-    /* Ahora está para Mobile, posteriormente tendremos que configurar que si pasa de tal medida X la pantalla se pase a Row */
-    background-color: #099d8d;
-    color: white;
-    font-size: 16px;
-    font-family: rubik;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    background-color: #14d9c4;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    height: 45px;
-
-}
-.teamgroup {
-    height: 60px;
-    align-items: center;
-
-}
-.hero {
-    height: 316px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    /*pruebas de proyectos anteriores para ajustar imagen del hero*/
-    background-size: cover;
-    -webkit-box-pack: center;
-    position: relative;
-}
-.claim {
-    height: 80px;
-    width: 290px;
-    background-color: white;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-}
-
-.team {
-    width: 320px;
-    height: 504px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-}
-.h2_team {
-    color: aqua;
-    font-family: Rubik-Medium;
-    font-size: 24px;
-    line-height: 45px;
-    text-align: center;
-}
-.descrip_team {
-    width: 290px;
-    height: 384px;
-    font-size: 16px;
-    font-family: OpenSans;
-    text-align: center;
-    line-height: 24px;
-    color: #54585a;
->>>>>>> d113f2b1095aa07b298fdc0735b513ec90c076c3
 }
