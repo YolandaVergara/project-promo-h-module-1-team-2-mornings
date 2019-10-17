@@ -1,9 +1,21 @@
+<<<<<<< HEAD
 body {
     margin: 0px;
 }
 h2 {
     margin:0px;
 }
+=======
+/*estilos de reseteo*/
+section {
+    padding:0;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+>>>>>>> 64ea23683e26235083584a78043261f599e2b2d2
 .header {
     display: flex;
     flex-direction: column;
@@ -111,7 +123,7 @@ h2 {
     padding: 30px, 74px, 0px, 74px;
     display: flex;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid #b8b8b9;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -155,3 +167,28 @@ ul {
 li {
     list-style: none;
 }
+.qualities {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    color: #099d8d;
+    width: 320px;
+    height: 45px;
+       }
+.descrip_qualities {
+    width: 320px;
+    font-size: 16px;
+    font-family: OpenSans;
+    text-align: center;
+    line-height: 24px;
+    color: #54585a;
+   }
+.container_qualities {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 0px 45px 15px;
+    background-color: #e8e2e1;
+    width: 320px;
+   }
