@@ -1,3 +1,9 @@
+body {
+    margin: 0px;
+}
+h2 {
+    margin:0px;
+}
 .header {
     display: flex;
     flex-direction: column;
@@ -8,46 +14,66 @@
     font-family: rubik;
     justify-content: space-between;
     align-items: center;
-
+    border: solid grey;
+    position: fixed;
+    z-index: 2;
 }
-
-.menu {
+.header_team_name {
+    margin: 8px;
+    text-align: center;
+    border: solid red;
+}
+.header_menu {
     display: flex;
     flex-direction: row;
     background-color: #14d9c4;
     width: 100%;
+    height: 45px;
+    border: solid red;
+}
+.header_options_menu {
+    display:flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: 45px;
-
+    border: solid green;
+    margin: 0px 20px 0px 20px;
 }
 
-.teamgroup {
-    height: 60px;
-    align-items: center;
+.main {
 
 }
-
 .hero {
     height: 316px;
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-end; */
     /*pruebas de proyectos anteriores para ajustar imagen del hero*/
-    background-size: cover;
+    /* background-size: cover;
     -webkit-box-pack: center;
-    position: relative;
+    position: relative; */
 }
 
-.claim {
+.hero_image {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+
+}
+.hero_claim {
     height: 80px;
     width: 290px;
     background-color: white;
+    border: solid salmon;
     font-family: OpenSans-Semibold;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    top: -43px;
 }
 
 .team {
@@ -59,9 +85,11 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+    position: relative;
+    top: 96px;
 }
 
-.h2_team {
+.team_h2 {
     color: aqua;
     font-family: Rubik-Medium;
     font-size: 24px;
@@ -69,7 +97,7 @@
     text-align: center;
 }
 
-.descrip_team {
+.team_descrip {
     width: 290px;
     height: 384px;
     font-size: 16px;
