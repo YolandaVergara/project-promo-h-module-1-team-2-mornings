@@ -114,9 +114,14 @@ body {
     text-align: center;
 }
 
+<<<<<<< HEAD
+.team_descrip {
+    width: 100%;
+=======
 .team__descrip {
     width: 290px;
     height: 384px;
+>>>>>>> cf90b1d3c7b7aee48d0636884b15bf1b76fcd5a4
     font-size: 16px;
     font-family: OpenSans;
     text-align: center;
@@ -132,12 +137,10 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 320px;
-    height: 250px;
+    width: 100%;
+    }
 
-}
-
-.section1 {
+.foot__copy {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #b8b8b9;
@@ -145,7 +148,7 @@ body {
     width: 165;
 }
 
-.section2 {
+.foot__nav {
     /*padding: 70px, 103px, 120px, 103px;*/
     height: 60;
     width: 120;
@@ -171,32 +174,66 @@ ul {
 
 li {
     list-style: none;
+<<<<<<< HEAD
+} 
+/*h2 */
+.qualities { 
+=======
 }
 
 .qualities {
+>>>>>>> cf90b1d3c7b7aee48d0636884b15bf1b76fcd5a4
     font-family: 'Rubik', sans-serif;
     font-size: 22px;
     font-weight: 500;
     text-align: center;
     color: #099d8d;
-    width: 320px;
     height: 45px;
+<<<<<<< HEAD
+       }
+.descrip__qualities {
+    box-sizing: border-box;
+=======
 }
 
 .descrip_qualities {
     width: 320px;
+>>>>>>> cf90b1d3c7b7aee48d0636884b15bf1b76fcd5a4
     font-size: 16px;
     font-family: OpenSans;
     text-align: center;
     line-height: 24px;
     color: #54585a;
+<<<<<<< HEAD
+   }
+.container__qualities {
+=======
 }
 
 .container_qualities {
+>>>>>>> cf90b1d3c7b7aee48d0636884b15bf1b76fcd5a4
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: space-around;
     padding: 30px 0px 45px 15px;
     background-color: #e8e2e1;
+<<<<<<< HEAD
+    width: 100%;
+    position: relative;
+    top: 30px;
+   }
+.container__qualities__strengths {
+       width: 100%;
+       box-sizing: border-box;
+   } 
+.container__qualities__weaknesses {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+=======
     width: 320px;
 }
+>>>>>>> cf90b1d3c7b7aee48d0636884b15bf1b76fcd5a4
