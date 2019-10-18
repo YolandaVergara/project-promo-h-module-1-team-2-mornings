@@ -1,22 +1,24 @@
-<<<<<<< HEAD
-body {
+<<<<<<< HEAD body {
     margin: 0px;
 }
+
 h2 {
-    margin:0px;
+    margin: 0px;
 }
+
 =======
+
 /*estilos de reseteo*/
 section {
-    padding:0;
+    padding: 0;
 }
-body{
+
+body {
     margin: 0px;
     padding: 0px;
 }
 
->>>>>>> 64ea23683e26235083584a78043261f599e2b2d2
-.header {
+>>>>>>>64ea23683e26235083584a78043261f599e2b2d2 .header {
     display: flex;
     flex-direction: column;
     /* Ahora está para Mobile, posteriormente tendremos que configurar que si pasa de tal medida X la pantalla se pase a Row */
@@ -30,12 +32,14 @@ body{
     position: fixed;
     z-index: 2;
 }
-.header_team_name {
+
+.header__team__name {
     margin: 8px;
     text-align: center;
     border: solid red;
 }
-.header_menu {
+
+.header__menu {
     display: flex;
     flex-direction: row;
     background-color: #14d9c4;
@@ -43,8 +47,9 @@ body{
     height: 45px;
     border: solid red;
 }
-.header_options_menu {
-    display:flex;
+
+.header__options__menu {
+    display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -52,9 +57,8 @@ body{
     margin: 0px 20px 0px 20px;
 }
 
-.main {
+.main {}
 
-}
 .hero {
     height: 316px;
     width: 100%;
@@ -67,13 +71,14 @@ body{
     position: relative; */
 }
 
-.hero_image {
+.hero__image {
     position: relative;
     z-index: -1;
     width: 100%;
 
 }
-.hero_claim {
+
+.hero__claim {
     height: 80px;
     width: 290px;
     background-color: white;
@@ -101,7 +106,7 @@ body{
     top: 96px;
 }
 
-.team_h2 {
+.team__h2 {
     color: aqua;
     font-family: Rubik-Medium;
     font-size: 24px;
@@ -109,7 +114,7 @@ body{
     text-align: center;
 }
 
-.team_descrip {
+.team__descrip {
     width: 290px;
     height: 384px;
     font-size: 16px;
@@ -167,6 +172,7 @@ ul {
 li {
     list-style: none;
 }
+
 .qualities {
     font-family: 'Rubik', sans-serif;
     font-size: 22px;
@@ -175,7 +181,8 @@ li {
     color: #099d8d;
     width: 320px;
     height: 45px;
-       }
+}
+
 .descrip_qualities {
     width: 320px;
     font-size: 16px;
@@ -183,7 +190,8 @@ li {
     text-align: center;
     line-height: 24px;
     color: #54585a;
-   }
+}
+
 .container_qualities {
     display: flex;
     flex-direction: column;
@@ -191,4 +199,4 @@ li {
     padding: 30px 0px 45px 15px;
     background-color: #e8e2e1;
     width: 320px;
-   }
+}
