@@ -1,239 +1,199 @@
-<<<<<<< HEAD body {
-    margin: 0px;
-}
-
-h2 {
-    margin: 0px;
-}
-
-=======
-
-/*estilos de reseteo*/
-section {
-    padding: 0;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-}
-
->>>>>>>64ea23683e26235083584a78043261f599e2b2d2 .header {
-    display: flex;
-    flex-direction: column;
-    /* Ahora está para Mobile, posteriormente tendremos que configurar que si pasa de tal medida X la pantalla se pase a Row */
-    background-color: #099d8d;
-    color: white;
-    font-size: 16px;
-    font-family: rubik;
-    justify-content: space-between;
-    align-items: center;
-    border: solid grey;
-    position: fixed;
-    z-index: 2;
-}
-
-.header__team__name {
-    margin: 8px;
-    text-align: center;
-    border: solid red;
-}
-
-.header__menu {
-    display: flex;
-    flex-direction: row;
-    background-color: #14d9c4;
-    width: 100%;
-    height: 45px;
-    border: solid red;
-}
-
-.header__options__menu {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    border: solid green;
-    margin: 0px 20px 0px 20px;
-}
-
-.main {}
-
-.hero {
-    height: 316px;
-    width: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: flex-end; */
-    /*pruebas de proyectos anteriores para ajustar imagen del hero*/
-    /* background-size: cover;
-    -webkit-box-pack: center;
-    position: relative; */
-}
-
-.hero__image {
-    position: relative;
-    z-index: -1;
-    width: 100%;
-
-}
-
-.hero__claim {
-    height: 80px;
-    width: 290px;
-    background-color: white;
-    border: solid salmon;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    box-sizing: border-box;
-    top: -43px;
-}
-
-.team {
-    width: 320px;
-    height: 504px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    top: 96px;
-}
-
-.team__h2 {
-    color: aqua;
-    font-family: Rubik-Medium;
-    font-size: 24px;
-    line-height: 45px;
-    text-align: center;
-}
-
-<<<<<<< HEAD
-.team_descrip {
-    width: 100%;
-=======
-.team__descrip {
-    width: 290px;
-    height: 384px;
->>>>>>> cf90b1d3c7b7aee48d0636884b15bf1b76fcd5a4
-    font-size: 16px;
-    font-family: OpenSans;
-    text-align: center;
-    line-height: 24px;
-    color: #54585a;
-}
-
-.foot {
-    padding: 30px, 74px, 0px, 74px;
-    display: flex;
-    box-sizing: border-box;
-    border: 1px solid #b8b8b9;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
+    body {
+        margin: 0px;
     }
 
-.foot__copy {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #b8b8b9;
-    height: 15;
-    width: 165;
-}
+    h2 {
+        margin: 0px;
+    }
 
-.foot__nav {
-    /*padding: 70px, 103px, 120px, 103px;*/
-    height: 60;
-    width: 120;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    line-height: 1.43;
+    /* header */
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* Ahora está para Mobile, posteriormente tendremos que configurar que si pasa de tal medida X la pantalla se pase a Row */
+        background-color: #099d8d;
+        color: white;
+        font-size: 16px;
+        font-family: rubik;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .header__team__name {
+        margin: 8px;
+
+    }
+
+    .header__menu {
+        display: flex;
+        flex-direction: row;
+        background-color: #14d9c4;
+        width: 100%;
+        height: 45px;
+        justify-content: space-between;
+    }
+
+    .header__options__menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 20px 0px 20px;
+    }
+
+    /* FIN HEADER */
+
+    .hero {
+        height: 316px;
+        width: 100%;
+        /* display: flex;
     justify-content: center;
-    text-align: center;
-    color: #54585A;
-    font-weight: 600;
-    opacity: 0.75;
-}
+    align-items: flex-end; */
+        /*pruebas de proyectos anteriores para ajustar imagen del hero*/
+        /* background-size: cover;
+    -webkit-box-pack: center;
+    position: relative; */
+    }
 
-.section3 {
-    width: 150px;
-    height: 50px;
-}
+    .hero__image {
+        position: relative;
+        z-index: -1;
+        width: 100%;
 
-ul {
-    padding: 0px;
-    margin: 0px;
-}
+    }
 
-li {
-    list-style: none;
-<<<<<<< HEAD
-} 
-/*h2 */
-.qualities { 
-=======
-}
+    .hero__claim {
+        height: 80px;
+        width: 290px;
+        background-color: white;
+        border: solid salmon;
+        font-family: OpenSans-Semibold;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        top: -43px;
+    }
 
-.qualities {
->>>>>>> cf90b1d3c7b7aee48d0636884b15bf1b76fcd5a4
-    font-family: 'Rubik', sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    text-align: center;
-    color: #099d8d;
-    height: 45px;
-<<<<<<< HEAD
-       }
-.descrip__qualities {
-    box-sizing: border-box;
-=======
-}
+    .team {
+        width: 320px;
+        height: 504px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        top: 96px;
+    }
 
-.descrip_qualities {
-    width: 320px;
->>>>>>> cf90b1d3c7b7aee48d0636884b15bf1b76fcd5a4
-    font-size: 16px;
-    font-family: OpenSans;
-    text-align: center;
-    line-height: 24px;
-    color: #54585a;
-<<<<<<< HEAD
-   }
-.container__qualities {
-=======
-}
+    .team__h2 {
+        color: aqua;
+        font-family: Rubik-Medium;
+        font-size: 24px;
+        line-height: 45px;
+        text-align: center;
+    }
 
-.container_qualities {
->>>>>>> cf90b1d3c7b7aee48d0636884b15bf1b76fcd5a4
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 30px 0px 45px 15px;
-    background-color: #e8e2e1;
-<<<<<<< HEAD
-    width: 100%;
-    position: relative;
-    top: 30px;
-   }
-.container__qualities__strengths {
-       width: 100%;
-       box-sizing: border-box;
-   } 
-.container__qualities__weaknesses {
-    width: 100%;
-    box-sizing: border-box;
-}
+    .team_descrip {
+        width: 100%;
+        font-size: 16px;
+        font-family: OpenSans;
+        text-align: center;
+        line-height: 24px;
+        color: #54585a;
+    }
 
+    .foot {
+        padding: 30px, 74px, 0px, 74px;
+        display: flex;
+        box-sizing: border-box;
+        border: 1px solid #b8b8b9;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
 
-=======
-    width: 320px;
-}
->>>>>>> cf90b1d3c7b7aee48d0636884b15bf1b76fcd5a4
+    .foot__copy {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: #b8b8b9;
+        height: 15;
+        width: 165;
+    }
+
+    .foot__nav {
+        /*padding: 70px, 103px, 120px, 103px;*/
+        height: 60;
+        width: 120;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 1.43;
+        justify-content: center;
+        text-align: center;
+        color: #54585A;
+        font-weight: 600;
+        opacity: 0.75;
+    }
+
+    .section3 {
+        width: 150px;
+        height: 50px;
+    }
+
+    ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    /*h2 */
+    .qualities {
+        font-family: 'Rubik', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        color: #099d8d;
+        height: 45px;
+    }
+
+    .descrip__qualities {
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: OpenSans;
+        text-align: center;
+        line-height: 24px;
+        color: #54585a;
+    }
+
+    .container__qualities {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px 0px 45px 15px;
+        background-color: #e8e2e1;
+        width: 100%;
+        position: relative;
+        top: 30px;
+    }
+
+    .container__qualities__strengths {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container__qualities__weaknesses {
+        width: 100%;
+        box-sizing: border-box;
+    }
