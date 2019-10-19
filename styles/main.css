@@ -6,13 +6,14 @@
         margin: 0px;
     }
 
-    /* header */
+    /* INICIO HEADER */
     .header {
         display: flex;
         flex-direction: column;
         width: 100%;
         /* Ahora está para Mobile, posteriormente tendremos que configurar que si pasa de tal medida X la pantalla se pase a Row */
-        background-color: #099d8d;
+        background-color: rgba(9, 157, 142, 0.9);
+        /* METEMOS LAS TRANSPARENCIAS??? ESTÁ METIDA Y FUNCIONA*/
         color: white;
         font-size: 16px;
         font-family: rubik;
@@ -20,20 +21,21 @@
         align-items: center;
         position: fixed;
         z-index: 1;
+        opacity: 0.9;
+        /* hE METIDO ESTE OPACITY PARA QUE LO HEREDE EL HIJO */
     }
 
     .header__team__name {
         margin: 8px;
-
     }
 
     .header__menu {
         display: flex;
         flex-direction: row;
-        background-color: #14d9c4;
+        background-color: rgba(20, 217, 197, 0.9);
+        /* METEMOS LAS TRANSPARENCIAS?? ESTA METIDA PERO NO ME SALE*/
         width: 100%;
         height: 45px;
-        justify-content: space-between;
     }
 
     .header__options__menu {
@@ -42,6 +44,14 @@
         justify-content: space-between;
         align-items: center;
         margin: 0px 20px 0px 20px;
+    }
+
+    .nav__team,
+    .nav__who,
+    .nav__contact {
+        color: white;
+        box-sizing: border-box;
+        padding: 20px;
     }
 
     /* FIN HEADER */
@@ -109,6 +119,84 @@
         line-height: 24px;
         color: #54585a;
     }
+
+
+    /* INDIVIDUAL BEA INICIO */
+
+
+    .bea {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 5px solid black;
+        box-sizing: border-box;
+    }
+
+    .individual__image {}
+
+    .individual__image__adalaber {
+        max-height: 180px;
+        box-sizing: border-box;
+        border: solid 5px;
+        border-color: rgba(0, 0, 0, 0.08);
+    }
+
+    .individual__bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid red;
+    }
+
+    .individual__title {
+        border: green solid 2px;
+        text-align: center;
+        font-family: OpenSans;
+        font-size: 20px;
+        line-height: 45px;
+        align-self: center;
+
+    }
+
+    .individual__bio_text {
+        border: green solid 2px;
+        text-align: center;
+        width: 100%;
+        font-family: OpenSans;
+        font-size: 16px;
+        align-self: center;
+        color: #54585a;
+    }
+
+    .individual__socialnetworks {
+
+        border: green solid 2px;
+        width: 100%;
+        /* width: 124px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10, 30, 10, 30;
+
+
+
+    }
+
+    .logo {
+
+        height: 30px;
+        width: 10px;
+        border: yellow solid 2px;
+        padding: auto;
+        margin: auto;
+
+
+    }
+
+    /* INDIVIDUAL BEA FIN  */
 
     .foot {
         padding: 30px, 74px, 0px, 74px;
