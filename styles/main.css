@@ -52,6 +52,7 @@ h2 {
   color: white;
   box-sizing: border-box;
   padding: 20px;
+
 }
 
 /* FIN HEADER */
@@ -94,28 +95,43 @@ h2 {
 }
 
 /* FIN HERO */
+/* INICIO TEAM */
 .team {
-  width: 320px;
+  width: 100%;
+  /* Revisar altura para responsive */
   height: 504px;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  /* flex-direction: column; Cuando descomentamos column, el titulo de equipo "pisa" el claim */
+  /* text-align: center; Nos hace falta? */
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   align-content: center;
   position: relative;
-  top: 96px;
+  margin: auto;
 }
 
-.team__h2 {
-  color: aqua;
-  font-family: Rubik-Medium;
+/* @media (min-width: 768px) {
+  .team__background {
+    height: 303px;
+​
+  }
+} */
+.team__background {
+  background: white;
+  margin: 0 15px;
+  text-align: center;
+}
+
+​ .team__background__h2 {
+  color: #099d8d;
+  font-family: Rubik;
   font-size: 24px;
   line-height: 45px;
   text-align: center;
 }
 
-.team_descrip {
+​ .team__background__descrip {
   width: 100%;
   font-size: 16px;
   font-family: OpenSans;
@@ -123,6 +139,8 @@ h2 {
   line-height: 24px;
   color: #54585a;
 }
+
+/* FIN TEAM */
 
 /* INDIVIDUAL BEA INICIO */
 
@@ -132,7 +150,7 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 5px solid black;
+  /* border: 5px solid black; */
   box-sizing: border-box;
   margin-bottom: 40px;
   padding: 20px;
