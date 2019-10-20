@@ -215,6 +215,17 @@ h2 {
   padding: 20px;
 }
 
+.yol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 5px solid black;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  padding: 20px;
+}
 .foot {
   padding: 30px, 74px, 0px, 74px;
   display: flex;
