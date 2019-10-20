@@ -126,7 +126,7 @@ h2 {
 
 /* INDIVIDUAL BEA INICIO */
 
-.bea {
+.adalaber {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -138,8 +138,7 @@ h2 {
   padding: 20px;
 }
 
-.individual__image {
-}
+.individual__image {}
 
 .individual__image__adalaber {
   max-height: 180px;
@@ -203,29 +202,9 @@ h2 {
 
 /* INDIVIDUAL BEA FIN  */
 
-.marina {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border: 5px solid black;
-  box-sizing: border-box;
-  margin-bottom: 40px;
-  padding: 20px;
-}
 
-.yol {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border: 5px solid black;
-  box-sizing: border-box;
-  margin-bottom: 40px;
-  padding: 20px;
-}
+
+
 .foot {
   padding: 30px, 74px, 0px, 74px;
   display: flex;
@@ -243,6 +222,7 @@ h2 {
   color: #b8b8b9;
   height: 15;
   width: 165;
+  text-align: center;
 }
 
 .foot__nav {
