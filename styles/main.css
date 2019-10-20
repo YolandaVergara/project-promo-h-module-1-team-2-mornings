@@ -121,6 +121,8 @@ h2 {
   background: white;
   margin: 0 15px;
   text-align: center;
+  /* color: #099d8d; */
+  font-family: Rubik;
 }
 
 ​ .team__background__h2 {
@@ -137,6 +139,10 @@ h2 {
   font-family: OpenSans;
   text-align: center;
   line-height: 24px;
+  color: #54585a;
+}
+
+p. {
   color: #54585a;
 }
 
