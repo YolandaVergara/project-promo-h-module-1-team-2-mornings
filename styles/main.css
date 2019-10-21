@@ -65,6 +65,7 @@ a:active {
   text-decoration: none;
 }
 
+
 @media all and (min-width: 768px) {
   .header {
     flex-direction: row;
@@ -286,6 +287,7 @@ a:active {
   .adalaber {
     flex-direction: row;
   }
+
   .adalaber__left {
     width: 100%;
     display: flex;
@@ -293,6 +295,7 @@ a:active {
     justify-content: space-between;
     align-items: center;
   }
+
   .adalaber__right {
     width: 100%;
     display: flex;
@@ -300,18 +303,22 @@ a:active {
     justify-content: space-between;
     align-items: center;
   }
+
   .individual__bio__left {
     align-items: flex-start;
     padding: 0px 40px;
   }
+
   .individual__bio__right {
     align-items: flex-end;
     padding: 0px 40px;
   }
+
   .individual__bio__text__left {
     max-width: 100%;
     text-align: left;
   }
+
   .individual__bio__text__right {
     max-width: 100%;
     text-align: right;
@@ -320,62 +327,70 @@ a:active {
   .individual__title__left {
     text-align: left;
   }
+
   .individual__title__right {
     text-align: right;
   }
+
   .individual__socialnetworks__left {
     display: flex;
     flex-direction: row;
   }
+
   .individual__socialnetworks__right {
     display: flex;
     justify-content: flex-end;
   }
 }
 
-/* INDIVIDUAL BEA FIN  */
+/* FOOTER  */
 
 .foot {
-  padding: 30px, 74px, 0px, 74px;
+  padding: 20px;
   display: flex;
   box-sizing: border-box;
   border: 1px solid #b8b8b9;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 250px;
 }
 
 .foot__copy {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #b8b8b9;
-  height: 15;
   width: 165;
   text-align: center;
 }
 
 .foot__nav {
-  /*padding: 70px, 103px, 120px, 103px;*/
-  height: 60;
   width: 120;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  line-height: 1.43;
-  justify-content: center;
   text-align: center;
+  line-height: 1.43;
   color: #54585a;
   font-weight: 600;
   opacity: 0.75;
 }
 
-.section3 {
-  width: 150px;
-  height: 50px;
+.foot_image {}
+
+@media all and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero_1200px.jpg);
+    align-items: flex-start;
+  }
+
+  .hero__claim {
+    transform: translateY(0%);
+    margin-left: 5%;
+    max-width: 500px;
+    opacity: 0.8;
+  }
 }
-
-
-
 
 ul {
   padding: 0px;
