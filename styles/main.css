@@ -72,7 +72,6 @@ a:active {
   font-weight: 500px;
 }
 
-
 @media all and (min-width: 768px) {
   .header {
     flex-direction: row;
@@ -175,7 +174,6 @@ a:active {
   width: 30px;
   background: white;
   transform: rotate(45deg) translate(30%, 30%);
-
 }
 
 /* QUALITIES S&F */
@@ -203,7 +201,6 @@ a:active {
   align-self: center;
   color: #099d8d;
   height: 45px;
-
 }
 
 .descrip__qualities {
@@ -214,7 +211,6 @@ a:active {
   line-height: 24px;
   color: #54585a;
 }
-
 
 .container__qualities__weaknesses {
   width: 100%;
@@ -240,158 +236,80 @@ a:active {
   .container__qualities__weaknesses {
     margin-left: 10px;
   }
-
 }
 
-
 @media all and (min-width: 1200px) {
-
   .container__qualities__weaknesses,
   .container__qualities__strengths {
     max-width: 500px;
-
   }
 }
 
 /* INDIVIDUAL BEA INICIO */
 
+.individual__description {
+  padding-top: 30px;
+}
 .individual__description__title {
-  padding-top: 55px;
+  font-family: Rubik-Medium;
+  color: #099d8d;
+  line-height: 45px;
   text-align: center;
 }
-
-.adalaber {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  /* border: 5px solid black; */
-  box-sizing: border-box;
-  margin-bottom: 40px;
-  padding: 20px;
-}
-
-.individual__image__adalaber {
-  max-height: 180px;
-  box-sizing: border-box;
-  border: solid 5px;
-  border-color: #00000014;
-  border-radius: 5%;
-  margin: 0;
-}
-
-.individual__bio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* border: 3px solid red; */
-  width: 100%;
-}
-
 .individual__title {
-  /* border: green solid 2px; */
   text-align: center;
   font-family: OpenSans;
   font-size: 20px;
   line-height: 45px;
-  /* align-self: center; */
-  margin: 0;
-}
-
-.individual__bio_text {
-  /* border: green solid 2px; */
-  text-align: center;
-  max-width: 290px;
-  font-family: OpenSans;
-  font-size: 16px;
   align-self: center;
-  color: #54585a;
   margin: 0;
 }
-
-.individual__socialnetworks {
-  /* border: green solid 2px; */
-  width: 100%;
+.individual__bio {
+  font-family: OpenSans;
+  line-height: 24px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: baseline;
-  min-height: 30px;
-  max-width: 124px;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.individual__image__adalaber {
+  max-height: 180px;
+  box-sizing: border-box;
+  border: solid 5px;
+  border-color: rgba(0, 0, 0, 0.08);
   margin: 0;
 }
-
-.logo {
-  height: 30px;
-  width: 30px;
-  /* border: yellow solid 2px; */
+.logos {
+  color: #099d8d;
   box-sizing: border-box;
   padding: 5px;
-  flex: auto;
-  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-@media all and (min-width: 768px) {
-  .adalaber {
-    flex-direction: row;
-  }
-
-  .adalaber__left {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .adalaber__right {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .individual__bio__left {
-    align-items: flex-start;
-    padding: 0px 40px;
-  }
-
-  .individual__bio__right {
-    align-items: flex-end;
-    padding: 0px 40px;
-  }
-
-  .individual__bio__text__left {
-    max-width: 100%;
-    text-align: left;
-  }
-
-  .individual__bio__text__right {
-    max-width: 100%;
-    text-align: right;
-  }
-
-  .individual__title__left {
-    text-align: left;
-  }
-
-  .individual__title__right {
-    text-align: right;
-  }
-
-  .individual__socialnetworks__left {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .individual__socialnetworks__right {
-    display: flex;
-    justify-content: flex-end;
-  }
+.individual__socialnetworks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.logo__list {
+  display: inline;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.adalaber__bea,
+.adalaber__cris,
+.adalaber__marina,
+.adalaber__yol {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 /* FOOTER  */
@@ -431,7 +349,6 @@ a:active {
 .foot__image {
   padding: 10px;
   box-sizing: border-box;
-
 }
 
 @media all and (min-width: 768px) {
@@ -447,7 +364,6 @@ a:active {
   .foot__nav,
   .foot__image {
     width: 50%;
-
   }
 
   .foot__nav__list {
