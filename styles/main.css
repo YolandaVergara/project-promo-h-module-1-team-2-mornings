@@ -231,15 +231,25 @@ a:active {
   .container__qualities__weaknesses,
   .container__qualities__strengths {
     max-width: 400px;
-
   }
+
+  .container__qualities__strengths {
+    margin-right: 10px;
+  }
+
+  .container__qualities__weaknesses {
+    margin-left: 10px;
+  }
+
 }
+
 
 @media all and (min-width: 1200px) {
 
   .container__qualities__weaknesses,
   .container__qualities__strengths {
     max-width: 500px;
+
   }
 }
 
@@ -437,6 +447,7 @@ a:active {
   .foot__nav,
   .foot__image {
     width: 50%;
+
   }
 
   .foot__nav__list {
