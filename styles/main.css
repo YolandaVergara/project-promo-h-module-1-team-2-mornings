@@ -95,7 +95,7 @@ a:active {
 /* HERO */
 
 .hero {
-  background-image: url(../images/hero_320px.jpg);
+  background-image: url(../images/hero_768px.jpg);
   background-size: cover;
   background-position: left;
   width: 100%;
@@ -288,6 +288,9 @@ a:active {
   width: 150px;
   height: 50px;
 }
+
+
+
 
 ul {
   padding: 0px;
