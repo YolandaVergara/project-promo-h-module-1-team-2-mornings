@@ -52,7 +52,6 @@ h2 {
   color: white;
   box-sizing: border-box;
   padding: 20px;
-
 }
 
 /* FIN HEADER */
@@ -142,13 +141,59 @@ h2 {
   color: #54585a;
 }
 
-p. {
+/* FIN TEAM */
+.qualities {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: #099d8d;
+  height: 45px;
+}
+
+.descrip__qualities {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: OpenSans;
+  text-align: center;
+  line-height: 24px;
   color: #54585a;
 }
 
-/* FIN TEAM */
+.container__qualities {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 0px 45px 15px;
+  background-color: #e8e2e1;
+  width: 100%;
+  position: relative;
+  top: 30px;
+}
+
+.container__qualities__strengths {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container__qualities__weaknesses {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media all and (min-width: 768px) {
+  .container__qualities {
+    flex-direction: row;
+  }
+}
 
 /* INDIVIDUAL BEA INICIO */
+
+.individual__description__title {
+  padding-top: 55px;
+  text-align: center;
+}
 
 .adalaber {
   display: flex;
@@ -162,13 +207,15 @@ p. {
   padding: 20px;
 }
 
-.individual__image {}
+.individual__image {
+}
 
 .individual__image__adalaber {
   max-height: 180px;
   box-sizing: border-box;
   border: solid 5px;
-  border-color: rgba(0, 0, 0, 0.08);
+  border-color: #00000014;
+  border-radius: 5%;
   margin: 0;
 }
 
@@ -187,7 +234,7 @@ p. {
   font-family: OpenSans;
   font-size: 20px;
   line-height: 45px;
-  align-self: center;
+  /* align-self: center; */
   margin: 0;
 }
 
@@ -206,6 +253,7 @@ p. {
   /* border: green solid 2px; */
   width: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
@@ -224,10 +272,58 @@ p. {
   margin-top: 10px;
 }
 
+@media all and (min-width: 768px) {
+  .adalaber {
+    flex-direction: row;
+  }
+  .adalaber__left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .adalaber__right {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .individual__bio__left {
+    align-items: flex-start;
+    padding: 0px 40px;
+  }
+  .individual__bio__right {
+    align-items: flex-end;
+    padding: 0px 40px;
+  }
+  .individual__bio__text__left {
+    max-width: 100%;
+    text-align: left;
+  }
+  .individual__bio__text__right {
+    max-width: 100%;
+    text-align: right;
+  }
+
+  .individual__title__left {
+    text-align: left;
+  }
+  .individual__title__right {
+    text-align: right;
+  }
+  .individual__socialnetworks__left {
+    display: flex;
+    flex-direction: row;
+  }
+  .individual__socialnetworks__right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
 /* INDIVIDUAL BEA FIN  */
-
-
-
 
 .foot {
   padding: 30px, 74px, 0px, 74px;
@@ -275,45 +371,4 @@ ul {
 
 li {
   list-style: none;
-}
-
-/*h2 */
-.qualities {
-  font-family: "Rubik", sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  text-align: center;
-  color: #099d8d;
-  height: 45px;
-}
-
-.descrip__qualities {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: OpenSans;
-  text-align: center;
-  line-height: 24px;
-  color: #54585a;
-}
-
-.container__qualities {
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 30px 0px 45px 15px;
-  background-color: #e8e2e1;
-  width: 100%;
-  position: relative;
-  top: 30px;
-}
-
-.container__qualities__strengths {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.container__qualities__weaknesses {
-  width: 100%;
-  box-sizing: border-box;
 }
