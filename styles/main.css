@@ -311,10 +311,12 @@ a:active {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 0 30px;
+}
+.individual__text__norev,
+.individual__text__rev {
   text-align: center;
 }
-
-.reverse {}
 
 .logos {
   color: #099d8d;
@@ -333,21 +335,20 @@ a:active {
 
 @media all and (min-width: 768px) {
 
-<<<<<<< HEAD
+  /* Quizá esta etiqueta ahora podemos quitarla */
   .individual__bio {
-    display: flex;
-    flex-direction: column;
+    text-align: left;
     align-items: flex-start;
   }
 
-=======
->>>>>>> 16426506a8d00e745913a3dbde4f1d4ade581801
   .adalaber__bea,
   .adalaber__marina {
     flex-direction: row;
     align-items: center;
     min-width: 400px;
-
+  }
+  .individual__text__norev {
+    text-align: left;
   }
 
   .adalaber__cris,
@@ -355,31 +356,22 @@ a:active {
     flex-direction: row-reverse;
     align-items: center;
     min-width: 400px;
-
   }
 
-<<<<<<< HEAD
+  .reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-=======
->>>>>>> 16426506a8d00e745913a3dbde4f1d4ade581801
+  .individual__text__rev {
+    text-align: right;
+  }
+  
   .individual__description__list {
     margin: 5%;
   }
-
-<<<<<<< HEAD
-  .individual__image {
-    padding: 0 30px;
-  }
-
-  .individual__text {
-    text-align: left;
-  }
-=======
-  .individual__bio {}
->>>>>>> 16426506a8d00e745913a3dbde4f1d4ade581801
 }
-
-@media all and (min-width: 1024) {}
 
 /* FOOTER  */
 
