@@ -239,6 +239,7 @@ a:active {
 }
 
 @media all and (min-width: 1200px) {
+
   .container__qualities__weaknesses,
   .container__qualities__strengths {
     max-width: 500px;
@@ -252,18 +253,19 @@ a:active {
 .individual__description {
   padding-top: 30px;
 }
+
 .individual__description__title {
   font-family: Rubik-Medium;
   color: #099d8d;
   line-height: 45px;
   text-align: center;
 }
+
 .individual__title {
   text-align: center;
   font-family: OpenSans;
   font-size: 20px;
   line-height: 45px;
-  align-self: center;
   margin: 0;
 }
 
@@ -299,6 +301,8 @@ a:active {
   text-align: center;
 }
 
+.reverse {}
+
 .logos {
   color: #099d8d;
   box-sizing: border-box;
@@ -315,24 +319,44 @@ a:active {
 }
 
 @media all and (min-width: 768px) {
+
+  .individual__bio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .adalaber__bea,
   .adalaber__marina {
     flex-direction: row;
     align-items: center;
     min-width: 400px;
+
   }
+
   .adalaber__cris,
   .adalaber__yol {
     flex-direction: row-reverse;
     align-items: center;
     min-width: 400px;
+
   }
+
+
   .individual__description__list {
     margin: 5%;
   }
-  .individual__bio {
+
+  .individual__image {
+    padding: 0 30px;
+  }
+
+  .individual__text {
+    text-align: left;
   }
 }
+
+@media all and (min-width: 1024) {}
 
 /* FOOTER  */
 
