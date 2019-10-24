@@ -114,7 +114,7 @@ a:active {
   background-size: cover;
   background-position: left;
   width: 100%;
-  height: 400px;
+  height: 550px;
   bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -313,6 +313,7 @@ a:active {
   width: 100%;
   padding: 0 30px;
 }
+
 .individual__text__norev,
 .individual__text__rev {
   text-align: center;
@@ -347,6 +348,7 @@ a:active {
     align-items: center;
     min-width: 400px;
   }
+
   .individual__text__norev {
     text-align: left;
   }
@@ -367,7 +369,7 @@ a:active {
   .individual__text__rev {
     text-align: right;
   }
-  
+
   .individual__description__list {
     margin: 5%;
   }
@@ -445,12 +447,4 @@ a:active {
     padding: 0px;
     margin: 0px;
   }
-<<<<<<< HEAD
-}
-
-ul {
-  padding: 0px;
-  margin: 0px;
-=======
->>>>>>> 16426506a8d00e745913a3dbde4f1d4ade581801
 }
