@@ -1,0 +1,40 @@
+.hero {
+    background-image: url(../images/hero_768px.jpg);
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    height: 550px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .hero__claim {
+    font-family: $fontOpensans;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    transform: translateY(50%);
+    padding: 10px;
+    margin: 0px;
+    font-weight: 600px;
+  }
+  
+  @media all and (min-width: 768px) {
+    .hero {
+      background-image: url(../images/hero_1200px.jpg);
+      align-items: flex-start;
+    }
+  
+    .hero__claim {
+      transform: translateY(0%);
+      margin-left: 5%;
+      max-width: 500px;
+      opacity: 0.8;
+    }
+  }
+  

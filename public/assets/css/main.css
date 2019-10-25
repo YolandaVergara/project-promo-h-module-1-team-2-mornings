@@ -8,22 +8,7 @@
   list-style: none;
 }
 
-a:link {
-  text-decoration: none;
-  color: white;
-}
-
-a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-a:active {
+a:link,a:visited,a:hover,a:active {
   text-decoration: none;
   color: white;
 }/* HEADER */.header {
@@ -126,7 +111,7 @@ a:active {
 }
 
 .hero__claim {
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
@@ -143,7 +128,7 @@ a:active {
 }
 
 .team__h2 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik-Medium", sans-serif;
   font-size: 24px;
   text-align: center;
   color: #099d8d;
@@ -156,7 +141,7 @@ a:active {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   line-height: 24px;
   color: #54585a;
@@ -203,7 +188,7 @@ a:active {
 }
 
 .qualities {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik-Medium", sans-serif;
   font-size: 22px;
   font-weight: 500px;
   text-align: center;
@@ -217,7 +202,7 @@ a:active {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   line-height: 24px;
   color: #54585a;
@@ -227,12 +212,12 @@ a:active {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}/* ABOUT US *//* INDIVIDUAL BEA INICIO */.individual__description {
+}/* ABOUT US */.individual__description {
   padding-top: 30px;
 }
 
 .individual__description__title {
-  font-family: Rubik-Medium;
+  font-family: "Rubik-Medium", sans-serif;
   color: #099d8d;
   line-height: 45px;
   text-align: center;
@@ -240,7 +225,7 @@ a:active {
 
 .individual__title {
   text-align: center;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   line-height: 45px;
   margin: 0;
@@ -275,7 +260,7 @@ a:active {
 }
 
 .individual__bio {
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   line-height: 24px;
   color: #54585a;
   display: -webkit-box;
