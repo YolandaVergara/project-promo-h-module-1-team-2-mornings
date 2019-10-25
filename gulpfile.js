@@ -1,18 +1,18 @@
 'use strict';
 
 const autoprefixer = require('gulp-autoprefixer');
-const browserSync  = require('browser-sync');
-const combineMq    = require('gulp-combine-mq');
-const concat       = require('gulp-concat');
-const config       = require('./config.json');
-const del          = require('del');
-const gulp         = require('gulp');
-const htmlPartial  = require('gulp-html-partial');
-const notify       = require('gulp-notify');
-const plumber      = require('gulp-plumber');
-const sass         = require('gulp-sass');
-const sourcemaps   = require('gulp-sourcemaps');
-const uglify       = require('gulp-uglify-es').default;
+const browserSync = require('browser-sync');
+const combineMq = require('gulp-combine-mq');
+const concat = require('gulp-concat');
+const config = require('./config.json');
+const del = require('del');
+const gulp = require('gulp');
+const htmlPartial = require('gulp-html-partial');
+const notify = require('gulp-notify');
+const plumber = require('gulp-plumber');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify-es').default;
 
 
 // > Dev tasks
@@ -22,9 +22,11 @@ gulp.task('clean', del.bind(null, ['public']));
 
 
 // >> Process HTML files
-gulp.task('html', function(done) {
+gulp.task('html', function (done) {
   gulp.src(config.html.src)
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
     .pipe(htmlPartial({
       basePath: config.html.partials
     }))
@@ -35,10 +37,12 @@ gulp.task('html', function(done) {
 
 
 // >> Process SCSS files (extended + sourcemaps +  autoprefixer)
-gulp.task('styles', function(done) {
+gulp.task('styles', function (done) {
   gulp.src(config.scss.src)
     .pipe(sourcemaps.init())
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
     .pipe(sass({
       outputStyle: 'extended',
     }))
@@ -54,30 +58,38 @@ gulp.task('styles', function(done) {
     }))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(config.scss.dest))
-    .pipe(browserSync.reload({ stream:true }));
+    .pipe(browserSync.reload({
+      stream: true
+    }));
   done();
 });
 
 
 
 // >> Concatenate JS files with sourcemaps
-gulp.task('scripts', function(done){
+gulp.task('scripts', function (done) {
   gulp.src(config.js.src)
     .pipe(sourcemaps.init())
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
     .pipe(concat('main.js'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(config.js.dest))
-    .pipe(browserSync.reload({ stream:true }));
+    .pipe(browserSync.reload({
+      stream: true
+    }));
   done();
 });
 
 
 
 // >> Copy image files
-gulp.task('images', function(done) {
+gulp.task('images', function (done) {
   gulp.src(config.images.src)
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
     .pipe(gulp.dest(config.images.dest));
   done();
 });
@@ -85,9 +97,11 @@ gulp.task('images', function(done) {
 
 
 // >> Copy icon files
-gulp.task('icons', function(done) {
+gulp.task('icons', function (done) {
   gulp.src(config.icons.src)
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
     .pipe(gulp.dest(config.icons.dest));
   done();
 });
@@ -101,9 +115,11 @@ gulp.task('clean-dist', del.bind(null, ['docs']));
 
 
 // >> Process HTML files
-gulp.task('html-dist', function(done) {
+gulp.task('html-dist', function (done) {
   gulp.src(config.html.src)
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
     .pipe(htmlPartial({
       basePath: config.html.partials
     }))
@@ -114,9 +130,11 @@ gulp.task('html-dist', function(done) {
 
 
 // >> Process SCSS files (compressed + autoprefixer)
-gulp.task('styles-dist', function(done) {
+gulp.task('styles-dist', function (done) {
   gulp.src(config.scss.src)
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
     .pipe(sass({
       outputStyle: 'compressed',
     }))
@@ -137,9 +155,11 @@ gulp.task('styles-dist', function(done) {
 
 
 // >> Concatenate and minify JS files w/o sourcemaps
-gulp.task('scripts-dist', function(done){
+gulp.task('scripts-dist', function (done) {
   gulp.src(config.js.src)
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest(config.js.dist));
@@ -149,9 +169,11 @@ gulp.task('scripts-dist', function(done){
 
 
 // >> Copy image files
-gulp.task('images-dist', function(done) {
+gulp.task('images-dist', function (done) {
   gulp.src(config.images.src)
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
     .pipe(gulp.dest(config.images.dist));
   done();
 });
@@ -159,9 +181,11 @@ gulp.task('images-dist', function(done) {
 
 
 // >> Copy icon files
-gulp.task('icons-dist', function(done) {
+gulp.task('icons-dist', function (done) {
   gulp.src(config.icons.src)
-    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(plumber({
+      errorHandler: notify.onError('Error: <%= error.message %>')
+    }))
     .pipe(gulp.dest(config.icons.dist));
   done();
 });
@@ -169,9 +193,9 @@ gulp.task('icons-dist', function(done) {
 
 
 // > Watchers + BrowserSync server
-gulp.task('default', gulp.series(['clean','html', 'styles','scripts', 'images', 'icons'], function(done) {
+gulp.task('default', gulp.series(['clean', 'html', 'styles', 'scripts', 'images', 'icons'], function (done) {
   browserSync.init({
-    server : {
+    server: {
       baseDir: './public/'
     }
   });
@@ -186,7 +210,7 @@ gulp.task('default', gulp.series(['clean','html', 'styles','scripts', 'images', 
 
 
 // > Build a production-ready version of your proyect
-gulp.task('docs', gulp.series(['clean-dist','html-dist','styles-dist','scripts-dist', 'images-dist', 'icons-dist'], function(done) {
+gulp.task('docs', gulp.series(['clean-dist', 'html-dist', 'styles-dist', 'scripts-dist', 'images-dist', 'icons-dist'], function (done) {
   console.log('🦄 Build OK!');
   done();
 }));
