@@ -9,10 +9,10 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-  }
   
-  .hero__claim {
+  &__claim {
     font-family: $fontOpensans;
+    
     font-size: 18px;
     line-height: 25px;
     text-align: center;
@@ -23,18 +23,19 @@
     margin: 0px;
     font-weight: 600px;
   }
+}
   
   @media all and (min-width: 768px) {
     .hero {
       background-image: url(../images/hero_1200px.jpg);
       align-items: flex-start;
-    }
-  
-    .hero__claim {
+      
+    &__claim {
       transform: translateY(0%);
       margin-left: 5%;
       max-width: 500px;
       opacity: 0.8;
     }
   }
+}
   

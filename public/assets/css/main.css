@@ -62,7 +62,7 @@ a:link,a:visited,a:hover,a:active {
   width: 100%;
 }
 
-.header__options__menu {
+.header__menu__options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +73,6 @@ a:link,a:visited,a:hover,a:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0px 20px 0px 20px;
 }
 
 .nav__team,.nav__who,.nav__contact {
@@ -148,7 +147,15 @@ a:link,a:visited,a:hover,a:active {
   -ms-flex-item-align: center;
   align-self: center;
   padding: 0% 5% 0% 5%;
-}/* DECORATION */.decoration__container {
+}/* DECORATION */.decoration {
+  height: 30px;
+  width: 30px;
+  background: white;
+  -webkit-transform: rotate(45deg) translate(30%, 30%);
+  transform: rotate(45deg) translate(30%, 30%);
+}
+
+.decoration__container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,14 +163,6 @@ a:link,a:visited,a:hover,a:active {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.decoration {
-  height: 30px;
-  width: 30px;
-  background: white;
-  -webkit-transform: rotate(45deg) translate(30%, 30%);
-  transform: rotate(45deg) translate(30%, 30%);
 }/* QUALITIES S&F */.container__qualities {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,10 +374,10 @@ a:link,a:visited,a:hover,a:active {
 
   .header__menu {
     background-color: transparent;
- /* width: 50%; */;
+    width: 50%;
   }
 
-  .header__options__menu {
+  .header__menu__options {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -422,7 +421,7 @@ a:link,a:visited,a:hover,a:active {
 
   .container__qualities__weaknesses {
     margin-left: 10px;
-  }/* Quizá esta etiqueta ahora podemos quitarla */  .individual__bio {
+  }/* Quizá esta etiqueta ahora podemos quitarla (Yol --> He probado a quitarla y los iconos se van al garete)*/  .individual__bio {
     text-align: left;
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -466,6 +465,7 @@ a:link,a:visited,a:hover,a:active {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+    text-align: right;
   }
 
   .individual__text__rev {

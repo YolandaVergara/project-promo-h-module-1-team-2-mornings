@@ -1,9 +1,8 @@
 .team {
-    width: 100%;
-    margin-top: 80px;
-  }
-  
-  .team__h2 {
+  width: 100%;
+  margin-top: 80px;
+
+  &__h2 {
     font-family: $fontRubik;
     font-size: 24px;
     text-align: center;
@@ -11,8 +10,8 @@
     height: 45px;
     align-self: center;
   }
-  
-  .team__descrip {
+
+  &__descrip {
     box-sizing: border-box;
     font-size: 16px;
     font-family: $fontOpensans;
@@ -22,17 +21,18 @@
     align-self: center;
     padding: 0% 5% 0% 5%;
   }
-  
-  /* DECORATION */
-  .decoration__container {
+}
+
+/* DECORATION */
+.decoration {
+  height: 30px;
+  width: 30px;
+  background: white;
+  transform: rotate(45deg) translate(30%, 30%);
+
+  &__container {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  
-  .decoration {
-    height: 30px;
-    width: 30px;
-    background: white;
-    transform: rotate(45deg) translate(30%, 30%);
-  }
+}
