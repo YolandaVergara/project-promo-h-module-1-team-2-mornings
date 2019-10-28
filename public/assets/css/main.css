@@ -304,13 +304,12 @@ a:link,a:visited,a:hover,a:active {
 .fab,.fas {
   color: #099d8d;
   margin-right: 10px;
-}/* FOOTER  */.foot {
-  padding: 20px;
+}/* FOOTER  */.footer {
+  padding-top: 30px;
+  padding-bottom: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   border: 1px solid #b8b8b9;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -322,36 +321,24 @@ a:link,a:visited,a:hover,a:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  box-sizing: border-box;
+  font-size: 14px;
 }
 
-.foot__copy {
+.footer__copyright {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
   color: #b8b8b9;
+  line-height: 20px;
   text-align: center;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
-.foot__nav {
+.footer__menu {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
   text-align: center;
   line-height: 20px;
   color: #54585a;
   font-weight: 600;
   opacity: 0.75;
   padding: 10px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.foot__image {
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 @media all and (min-width: 768px) {
@@ -476,7 +463,7 @@ a:link,a:visited,a:hover,a:active {
     margin: 5%;
   }
 
-  .foot {
+  .footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -492,11 +479,11 @@ a:link,a:visited,a:hover,a:active {
     padding: 10px;
   }
 
-  .foot__copy,.foot__nav,.foot__image {
+  .footer__copyright,.footer__menu,.footer__logo {
     width: 50%;
   }
 
-  .foot__nav__list {
+  .footer__menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -510,11 +497,11 @@ a:link,a:visited,a:hover,a:active {
     line-height: 30px;
   }
 
-  .foot__copy {
+  .footer__copyright {
     text-align: left;
   }
 
-  .foot__image {
+  .footer__logo {
     position: relative;
     bottom: 70px;
     width: 116px;

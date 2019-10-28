@@ -1,71 +1,61 @@
-.foot {
-    padding: 20px;
+.footer {
+    padding-top: 30px;
+    padding-bottom: 45px;
     display: flex;
-    box-sizing: border-box;
     border: 1px solid #b8b8b9;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .foot__copy {
-    font-family: $fontOpensans;
     font-size: 14px;
-    color: #b8b8b9;
-    text-align: center;
-    box-sizing: border-box;
+    
+    &__copyright { 
+      font-family: $fontOpensans;
+      color: #b8b8b9;
+      line-height: 20px;
+      text-align: center;
+
+    }
+
+    &__menu {
+      font-family: $fontOpensans;
+      text-align: center;
+      line-height: 20px;
+      color: #54585a;
+      font-weight: 600;
+      opacity: 0.75;
+      padding: 10px;
+    }
   }
   
-  .foot__nav {
-    font-family: $fontOpensans;
-    font-size: 14px;
-    text-align: center;
-    line-height: 20px;
-    color: #54585a;
-    font-weight: 600;
-    opacity: 0.75;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .foot__image {
-    padding: 10px;
-    box-sizing: border-box;
-  }
+
   
   @media all and (min-width: 768px) {
-    .foot {
+    .footer {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
       padding: 10px;
+    &__copyright, &__menu, &__logo {
+      width:50%;
     }
-  
-    .foot__copy,
-    .foot__nav,
-    .foot__image {
-      width: 50%;
-    }
-  
-    .foot__nav__list {
+    &__menu__list {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       line-height: 30px;
     }
   
-    .foot__copy {
+    &__copyright {
       text-align: left;
     }
   
-    .foot__image {
+    &__logo {
       position: relative;
       bottom: 70px;
       width: 116px;
       padding: 0px;
       margin: 0px;
+    }
     }
   }
