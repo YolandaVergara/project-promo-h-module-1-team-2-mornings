@@ -23,6 +23,7 @@
       font-weight: 600;
       opacity: 0.75;
       padding: 20px 0px 30px 0px;
+      text-transform: uppercase;
 
     }
   }
@@ -35,11 +36,15 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
+      padding: 24px 45px 6px 45px;
       
 
     &__copyright, &__menu, &__logo {
       width:50%;
-      padding: 0px; 
+      padding: 0px;
+    }
+    &__copyright {
+      padding-top: 6px;
     }
 
     &__menu__list {
@@ -47,6 +52,7 @@
       flex-direction: column;
       align-items: flex-end;
       line-height: 30px;
+      margin: 0px;
     }
   
     &__copyright {
@@ -55,8 +61,14 @@
   
     &__logo {
       position: relative;
-      bottom: 70px;
+      bottom: 55px;
       width: 116px;
     }
+    }
+  }
+
+  @media all and (min-width: 1200px){
+    .footer{
+      padding: 24px 138px 6px 138px;
     }
   }

@@ -345,6 +345,7 @@ a:link,a:visited,a:hover,a:active {
   font-weight: 600;
   opacity: 0.75;
   padding: 20px 0px 30px 0px;
+  text-transform: uppercase;
 }
 
 @media all and (min-width: 768px) {
@@ -482,11 +483,16 @@ a:link,a:visited,a:hover,a:active {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    padding: 24px 45px 6px 45px;
   }
 
   .footer__copyright,.footer__menu,.footer__logo {
     width: 50%;
     padding: 0px;
+  }
+
+  .footer__copyright {
+    padding-top: 6px;
   }
 
   .footer__menu__list {
@@ -501,6 +507,7 @@ a:link,a:visited,a:hover,a:active {
     -ms-flex-align: end;
     align-items: flex-end;
     line-height: 30px;
+    margin: 0px;
   }
 
   .footer__copyright {
@@ -509,7 +516,7 @@ a:link,a:visited,a:hover,a:active {
 
   .footer__logo {
     position: relative;
-    bottom: 70px;
+    bottom: 55px;
     width: 116px;
   }
 }
@@ -517,6 +524,10 @@ a:link,a:visited,a:hover,a:active {
 @media all and (min-width: 1200px) {
   .container__qualities__weaknesses,.container__qualities__strengths {
     max-width: 500px;
+  }
+
+  .footer {
+    padding: 24px 138px 6px 138px;
   }
 }
 
