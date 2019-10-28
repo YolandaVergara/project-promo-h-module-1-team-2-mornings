@@ -9,6 +9,7 @@
     color: $fontColor;
     line-height: 45px;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &__title {
@@ -20,6 +21,13 @@
   }
 }
 
+.anchor__who {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
+}
+
 .adalabers {
   box-sizing: border-box;
   display: flex;
@@ -29,25 +37,33 @@
   padding: 20px;
 }
 
-.individual__image__adalaber {
-  max-height: 180px;
-  box-sizing: border-box;
-  border: solid 5px;
-  border-color: rgba(0, 0, 0, 0.08);
-  margin: 0;
+.individual {
+  &__image__adalaber {
+    max-height: 180px;
+    box-sizing: border-box;
+    border: solid 5px;
+    border-color: rgba(0, 0, 0, 0.08);
+    margin: 0;
+  }
+
+  &__bio {
+    font-family: $fontOpensans;
+    line-height: 24px;
+    color: #54585a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  &__text {
+    text-align: center;
+  }
 }
 
-.individual__bio {
-  font-family: $fontOpensans;
-  line-height: 24px;
-  color: #54585a;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0 30px;
-}
+
 
 
 .logos {
@@ -65,15 +81,24 @@
   margin-right: 10px;
 }
 
-@media all and (min-width: 768px) {
 
-  /* Quizá esta etiqueta ahora podemos quitarla (Yol --> He probado a quitarla y los iconos se van al garete)*/
+
+@media all and (min-width: 768px) {
 
 
   .adalabers {
     flex-direction: row;
-    align-items: center;
     min-width: 400px;
+  }
+
+  .individual {
+    &__bio {
+      align-items: flex-start;
+    }
+
+    &__text {
+      text-align: left;
+    }
   }
 
   .adalabers:nth-child(even) {
@@ -82,37 +107,21 @@
     min-width: 400px;
   }
 
-  .individual__text__norev {
-    text-align: left;
+  .adalabers:nth-child(even) .individual__bio {
+    align-items: flex-end;
   }
 
-  .individual__bio {
-
-    align-items: flex-end;
-
-    &:nth-child(even) {
-      text-align: right;
-      align-items: flex-end;
-    }
-  }
-
-  // .adalaber__cris,
-  // .adalaber__yol {
-  //   flex-direction: row-reverse;
-  //   align-items: center;
-  //   min-width: 400px;
-  // }
-
-  .reverse {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  .adalabers:nth-child(even) .individual__bio .individual__text {
     text-align: right;
   }
 
+  .anchor__who {
+    top: -70px;
+  }
+}
 
-
-  .individual__description__list {
-    margin: 5%;
+@media all and (min-width: 1024px) {
+  .individual__description {
+    padding: 30px 138px 0 138px;
   }
 }

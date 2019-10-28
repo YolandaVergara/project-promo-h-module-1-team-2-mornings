@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 * {
   margin: 0px;
   padding: 0px;
@@ -228,6 +226,7 @@ a:link,a:visited,a:hover,a:active {
   color: #099d8d;
   line-height: 45px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .individual__title {
@@ -236,6 +235,13 @@ a:link,a:visited,a:hover,a:active {
   font-size: 20px;
   line-height: 45px;
   margin: 0;
+}
+
+.anchor__who {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
 }
 
 .adalabers {
@@ -285,6 +291,10 @@ a:link,a:visited,a:hover,a:active {
   align-items: center;
   width: 100%;
   padding: 0 30px;
+}
+
+.individual__text {
+  text-align: center;
 }
 
 .logos {
@@ -436,15 +446,24 @@ a:link,a:visited,a:hover,a:active {
 
   .container__qualities__weaknesses {
     margin-left: 10px;
-  }/* Quizá esta etiqueta ahora podemos quitarla (Yol --> He probado a quitarla y los iconos se van al garete)*/  .adalabers {
+  }
+
+  .adalabers {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     min-width: 400px;
+  }
+
+  .individual__bio {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .individual__text {
+    text-align: left;
   }
 
   .adalabers:nth-child(even) {
@@ -458,39 +477,18 @@ a:link,a:visited,a:hover,a:active {
     min-width: 400px;
   }
 
-  .individual__text__norev {
-    text-align: left;
-  }
-
-  .individual__bio {
+  .adalabers:nth-child(even) .individual__bio {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
   }
 
-  .individual__bio:nth-child(even) {
-    text-align: right;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-  }
-
-  .reverse {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+  .adalabers:nth-child(even) .individual__bio .individual__text {
     text-align: right;
   }
 
-  .individual__description__list {
-    margin: 5%;
+  .anchor__who {
+    top: -70px;
   }
 
   .foot {
@@ -537,6 +535,12 @@ a:link,a:visited,a:hover,a:active {
     width: 116px;
     padding: 0px;
     margin: 0px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .individual__description {
+    padding: 30px 138px 0 138px;
   }
 }
 
