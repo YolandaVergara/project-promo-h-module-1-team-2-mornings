@@ -1,6 +1,6 @@
 .team {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 90px;
 
   &__h2 {
     font-family: $fontRubik;
@@ -9,6 +9,7 @@
     color: $fontColor;
     height: 45px;
     align-self: center;
+    text-transform: uppercase;
   }
 
   &__descrip {
@@ -23,6 +24,13 @@
   }
 }
 
+.anchor__helper {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
 /* DECORATION */
 .decoration {
   height: 30px;
@@ -34,5 +42,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .anchor__helper {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+  }
+
+  .team {
+    margin-top: 50px;
   }
 }

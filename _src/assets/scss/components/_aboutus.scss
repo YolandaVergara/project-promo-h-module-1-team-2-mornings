@@ -1,26 +1,26 @@
-.individual__description {
-  padding-top: 30px;
+.individual {
+  &__description {
+    padding-top: 30px;
+
+  }
+
+  &__description__title {
+    font-family: $fontRubik;
+    color: $fontColor;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $fontOpensans;
+    font-size: 20px;
+    line-height: 45px;
+    margin: 0;
+  }
 }
 
-.individual__description__title {
-  font-family: $fontRubik;
-  color: $fontColor;
-  line-height: 45px;
-  text-align: center;
-}
-
-.individual__title {
-  text-align: center;
-  font-family: $fontOpensans;
-  font-size: 20px;
-  line-height: 45px;
-  margin: 0;
-}
-
-.adalaber__bea,
-.adalaber__cris,
-.adalaber__marina,
-.adalaber__yol {
+.adalabers {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -49,10 +49,6 @@
   padding: 0 30px;
 }
 
-.individual__text__norev,
-.individual__text__rev {
-  text-align: center;
-}
 
 .logos {
   color: $fontColor;
@@ -72,14 +68,16 @@
 @media all and (min-width: 768px) {
 
   /* Quizá esta etiqueta ahora podemos quitarla (Yol --> He probado a quitarla y los iconos se van al garete)*/
-  .individual__bio {
-    text-align: left;
-    align-items: flex-start;
+
+
+  .adalabers {
+    flex-direction: row;
+    align-items: center;
+    min-width: 400px;
   }
 
-  .adalaber__bea,
-  .adalaber__marina {
-    flex-direction: row;
+  .adalabers:nth-child(even) {
+    flex-direction: row-reverse;
     align-items: center;
     min-width: 400px;
   }
@@ -88,12 +86,22 @@
     text-align: left;
   }
 
-  .adalaber__cris,
-  .adalaber__yol {
-    flex-direction: row-reverse;
-    align-items: center;
-    min-width: 400px;
+  .individual__bio {
+
+    align-items: flex-end;
+
+    &:nth-child(even) {
+      text-align: right;
+      align-items: flex-end;
+    }
   }
+
+  // .adalaber__cris,
+  // .adalaber__yol {
+  //   flex-direction: row-reverse;
+  //   align-items: center;
+  //   min-width: 400px;
+  // }
 
   .reverse {
     display: flex;
@@ -102,9 +110,7 @@
     text-align: right;
   }
 
-  .individual__text__rev {
-    text-align: right;
-  }
+
 
   .individual__description__list {
     margin: 5%;
