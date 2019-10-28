@@ -5,15 +5,11 @@
     justify-content: space-around;
     background-color: #e8e2e1;
     width: 100%;
-    padding: 5%;
+    padding: 15px;
   }
   
-  .container__qualities__strengths {
-    width: 100%;
-    box-sizing: border-box;
-  }
   
-  .qualities {
+  .qualities__title {
     font-family: $fontRubik;
     font-size: 22px;
     font-weight: 500px;
@@ -23,7 +19,7 @@
     height: 45px;
   }
   
-  .descrip__qualities {
+  .qualities__description {
     box-sizing: border-box;
     font-size: 16px;
     font-family: $fontOpensans;
@@ -32,10 +28,6 @@
     color: #54585a;
   }
   
-  .container__qualities__weaknesses {
-    width: 100%;
-    box-sizing: border-box;
-  }
   
   @media all and (min-width: 768px) {
     .container__qualities {
@@ -44,24 +36,24 @@
       align-items: baseline;
     }
   
-    .container__qualities__weaknesses,
-    .container__qualities__strengths {
+    .container__qualities--weaknesses,
+    .container__qualities--strengths {
       max-width: 400px;
     }
   
-    .container__qualities__strengths {
+    .container__qualities--strengths {
       margin-right: 10px;
     }
   
-    .container__qualities__weaknesses {
+    .container__qualities--weaknesses {
       margin-left: 10px;
     }
   }
   
   @media all and (min-width: 1200px) {
   
-    .container__qualities__weaknesses,
-    .container__qualities__strengths {
+    .container__qualities--weaknesses,
+    .container__qualities--strengths {
       max-width: 500px;
     }
   }

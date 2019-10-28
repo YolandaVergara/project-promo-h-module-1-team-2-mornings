@@ -130,7 +130,8 @@ a:link,a:visited,a:hover,a:active {
   font-weight: 600px;
 }/*  TEAM */.team {
   width: 100%;
-  margin-top: 90px;
+  margin-top: 40px;
+  padding: 30px 15px 30px 15px;
 }
 
 .team__h2 {
@@ -144,9 +145,7 @@ a:link,a:visited,a:hover,a:active {
   text-transform: uppercase;
 }
 
-.team__descrip {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.team__description {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -154,7 +153,6 @@ a:link,a:visited,a:hover,a:active {
   color: #54585a;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 0% 5% 0% 5%;
 }
 
 .anchor__helper {
@@ -192,16 +190,10 @@ a:link,a:visited,a:hover,a:active {
   justify-content: space-around;
   background-color: #e8e2e1;
   width: 100%;
-  padding: 5%;
+  padding: 15px;
 }
 
-.container__qualities__strengths {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.qualities {
+.qualities__title {
   font-family: "Rubik-Medium", sans-serif;
   font-size: 22px;
   font-weight: 500px;
@@ -212,7 +204,7 @@ a:link,a:visited,a:hover,a:active {
   height: 45px;
 }
 
-.descrip__qualities {
+.qualities__description {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
@@ -220,12 +212,6 @@ a:link,a:visited,a:hover,a:active {
   text-align: center;
   line-height: 24px;
   color: #54585a;
-}
-
-.container__qualities__weaknesses {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }/* ABOUT US */.individual__description {
   padding-top: 30px;
 }
@@ -404,7 +390,8 @@ a:link,a:visited,a:hover,a:active {
   }
 
   .team {
-    margin-top: 50px;
+    margin-top: 0px;
+    padding: 45px 45px 30px 45px;
   }
 
   .container__qualities {
@@ -420,15 +407,15 @@ a:link,a:visited,a:hover,a:active {
     align-items: baseline;
   }
 
-  .container__qualities__weaknesses,.container__qualities__strengths {
+  .container__qualities--weaknesses,.container__qualities--strengths {
     max-width: 400px;
   }
 
-  .container__qualities__strengths {
+  .container__qualities--strengths {
     margin-right: 10px;
   }
 
-  .container__qualities__weaknesses {
+  .container__qualities--weaknesses {
     margin-left: 10px;
   }/* Quizá esta etiqueta ahora podemos quitarla (Yol --> He probado a quitarla y los iconos se van al garete)*/  .adalabers {
     -webkit-box-orient: horizontal;
@@ -539,7 +526,16 @@ a:link,a:visited,a:hover,a:active {
 }
 
 @media all and (min-width: 1200px) {
-  .container__qualities__weaknesses,.container__qualities__strengths {
+  .team {
+    padding: 45px 0px 30px 0px;
+  }
+
+  .team__description {
+    max-width: 601px;
+    margin: 0 auto;
+  }
+
+  .container__qualities--weaknesses,.container__qualities--strengths {
     max-width: 500px;
   }
 
