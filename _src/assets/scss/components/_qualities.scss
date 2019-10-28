@@ -1,0 +1,61 @@
+.qualities{
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #e8e2e1;
+    width: 100%;
+    padding: 0px 15px 45px 15px;
+  }
+  
+  &__title {
+    font-family: $fontRubik;
+    font-size: 22px;
+    font-weight: 500px;
+    text-align: center;
+    align-self: center;
+    color: $fontColor;
+    height: 45px;
+    margin-top:30px;
+  }
+  
+  &__description {
+    font-size: 16px;
+    font-family: $fontOpensans;
+    text-align: center;
+    line-height: 24px;
+    color: #54585a;
+  }
+}
+  
+  @media all and (min-width: 768px) {
+    .qualities{
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 45px 45px 60px 45px;
+    }
+      &--strengths, &--weaknesses {
+        width: 50%;
+        padding: 0px 15px;
+      }
+      &__title {
+        margin-top:0px;
+      }
+      &__description {
+        text-align: center;
+      }
+    }
+  }
+    
+  
+  @media all and (min-width: 1200px) {    
+    .qualities{
+    &__container {
+      padding: 45px 138px 60px 138px;
+     }
+    &--strengths, &--weaknesses {
+    padding: 0px 23px;
+      }
+    }
+    }
