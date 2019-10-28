@@ -6,9 +6,16 @@
   list-style: none;
 }
 
+a {
+  color: white;
+}
+
 a:link,a:visited,a:hover,a:active {
   text-decoration: none;
-  color: white;
+}
+
+.footer a {
+  color: #54585a;
 }/* HEADER */.header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,7 +128,8 @@ a:link,a:visited,a:hover,a:active {
   font-weight: 600px;
 }/*  TEAM */.team {
   width: 100%;
-  margin-top: 90px;
+  margin-top: 40px;
+  padding: 30px 15px 30px 15px;
 }
 
 .team__h2 {
@@ -135,9 +143,7 @@ a:link,a:visited,a:hover,a:active {
   text-transform: uppercase;
 }
 
-.team__descrip {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.team__description {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -145,7 +151,6 @@ a:link,a:visited,a:hover,a:active {
   color: #54585a;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 0% 5% 0% 5%;
 }
 
 .anchor__helper {
@@ -169,12 +174,10 @@ a:link,a:visited,a:hover,a:active {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}/* QUALITIES S&F */.container__qualities {
+}/* QUALITIES S&F */.qualities__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -183,16 +186,10 @@ a:link,a:visited,a:hover,a:active {
   justify-content: space-around;
   background-color: #e8e2e1;
   width: 100%;
-  padding: 5%;
+  padding: 0px 15px 45px 15px;
 }
 
-.container__qualities__strengths {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.qualities {
+.qualities__title {
   font-family: "Rubik-Medium", sans-serif;
   font-size: 22px;
   font-weight: 500px;
@@ -201,22 +198,15 @@ a:link,a:visited,a:hover,a:active {
   align-self: center;
   color: #099d8d;
   height: 45px;
+  margin-top: 30px;
 }
 
-.descrip__qualities {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.qualities__description {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   line-height: 24px;
   color: #54585a;
-}
-
-.container__qualities__weaknesses {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }/* ABOUT US */.individual__description {
   padding-top: 30px;
 }
@@ -317,13 +307,11 @@ a:link,a:visited,a:hover,a:active {
 .fab,.fas {
   color: #099d8d;
   margin-right: 10px;
-}/* FOOTER  */.foot {
-  padding: 20px;
+}/* FOOTER  */.footer {
+  padding: 30px 0 45px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   border: 1px solid #b8b8b9;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -335,36 +323,25 @@ a:link,a:visited,a:hover,a:active {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  box-sizing: border-box;
+  font-size: 14px;
 }
 
-.foot__copy {
+.footer__copyright {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
   color: #b8b8b9;
+  line-height: 20px;
   text-align: center;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
-.foot__nav {
+.footer__menu {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
   text-align: center;
   line-height: 20px;
   color: #54585a;
   font-weight: 600;
   opacity: 0.75;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.foot__image {
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  padding: 20px 0px 30px 0px;
+  text-transform: uppercase;
 }
 
 @media all and (min-width: 768px) {
@@ -420,10 +397,11 @@ a:link,a:visited,a:hover,a:active {
   }
 
   .team {
-    margin-top: 50px;
+    margin-top: 0px;
+    padding: 45px 45px 30px 45px;
   }
 
-  .container__qualities {
+  .qualities__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -431,17 +409,16 @@ a:link,a:visited,a:hover,a:active {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
+    padding: 45px 45px 60px 45px;
   }
 
-  .container__qualities__weaknesses,.container__qualities__strengths {
-    max-width: 400px;
+  .qualities--strengths,.qualities--weaknesses {
+    width: 50%;
+    padding: 0px 15px;
   }
 
-  .container__qualities__strengths {
-    margin-right: 10px;
+  .qualities__title {
+    margin-top: 0px;
   }
 
   .container__qualities__weaknesses {
@@ -491,7 +468,7 @@ a:link,a:visited,a:hover,a:active {
     top: -70px;
   }
 
-  .foot {
+  .footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -504,14 +481,19 @@ a:link,a:visited,a:hover,a:active {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding: 10px;
+    padding: 24px 45px 6px 45px;
   }
 
-  .foot__copy,.foot__nav,.foot__image {
+  .footer__copyright,.footer__menu,.footer__logo {
     width: 50%;
+    padding: 0px;
   }
 
-  .foot__nav__list {
+  .footer__copyright {
+    padding-top: 6px;
+  }
+
+  .footer__menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -523,18 +505,17 @@ a:link,a:visited,a:hover,a:active {
     -ms-flex-align: end;
     align-items: flex-end;
     line-height: 30px;
+    margin: 0px;
   }
 
-  .foot__copy {
+  .footer__copyright {
     text-align: left;
   }
 
-  .foot__image {
+  .footer__logo {
     position: relative;
-    bottom: 70px;
+    bottom: 55px;
     width: 116px;
-    padding: 0px;
-    margin: 0px;
   }
 }
 
@@ -545,8 +526,25 @@ a:link,a:visited,a:hover,a:active {
 }
 
 @media all and (min-width: 1200px) {
-  .container__qualities__weaknesses,.container__qualities__strengths {
-    max-width: 500px;
+  .team {
+    padding: 45px 0px 30px 0px;
+  }
+
+  .team__description {
+    max-width: 601px;
+    margin: 0 auto;
+  }
+
+  .qualities__container {
+    padding: 45px 138px 60px 138px;
+  }
+
+  .qualities--strengths,.qualities--weaknesses {
+    padding: 0px 23px;
+  }
+
+  .footer {
+    padding: 24px 138px 6px 138px;
   }
 }
 

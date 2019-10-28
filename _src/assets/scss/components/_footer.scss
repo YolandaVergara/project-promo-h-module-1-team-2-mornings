@@ -1,71 +1,74 @@
-.foot {
-    padding: 20px;
+.footer {
+    padding: 30px 0 45px 0;
     display: flex;
-    box-sizing: border-box;
     border: 1px solid #b8b8b9;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .foot__copy {
-    font-family: $fontOpensans;
     font-size: 14px;
-    color: #b8b8b9;
-    text-align: center;
-    box-sizing: border-box;
+    
+    &__copyright { 
+      font-family: $fontOpensans;
+      color: #b8b8b9;
+      line-height: 20px;
+      text-align: center;
+
+    }
+
+    &__menu {
+      font-family: $fontOpensans;
+      text-align: center;
+      line-height: 20px;
+      color: #54585a;
+      font-weight: 600;
+      opacity: 0.75;
+      padding: 20px 0px 30px 0px;
+      text-transform: uppercase;
+
+    }
   }
   
-  .foot__nav {
-    font-family: $fontOpensans;
-    font-size: 14px;
-    text-align: center;
-    line-height: 20px;
-    color: #54585a;
-    font-weight: 600;
-    opacity: 0.75;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .foot__image {
-    padding: 10px;
-    box-sizing: border-box;
-  }
+
   
   @media all and (min-width: 768px) {
-    .foot {
+    .footer {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 10px;
+      padding: 24px 45px 6px 45px;
+      
+
+    &__copyright, &__menu, &__logo {
+      width:50%;
+      padding: 0px;
     }
-  
-    .foot__copy,
-    .foot__nav,
-    .foot__image {
-      width: 50%;
+    &__copyright {
+      padding-top: 6px;
     }
-  
-    .foot__nav__list {
+
+    &__menu__list {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       line-height: 30px;
+      margin: 0px;
     }
   
-    .foot__copy {
+    &__copyright {
       text-align: left;
     }
   
-    .foot__image {
+    &__logo {
       position: relative;
-      bottom: 70px;
+      bottom: 55px;
       width: 116px;
-      padding: 0px;
-      margin: 0px;
+    }
+    }
+  }
+
+  @media all and (min-width: 1200px){
+    .footer{
+      padding: 24px 138px 6px 138px;
     }
   }

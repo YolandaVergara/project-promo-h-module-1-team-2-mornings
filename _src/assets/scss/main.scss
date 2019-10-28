@@ -8,12 +8,15 @@
 }
 
 a {
+   color: white;
   &:link,
   &:visited,
   &:hover,
   &:active {
-    text-decoration: none;
-    color: white;
+    text-decoration: none;  
+    }
+    .footer & {
+      color: #54585a;
   }
 }
 
@@ -27,7 +30,7 @@ a {
 @import "./components/team";
 
 /* QUALITIES S&F */
-@import "./components/wys";
+@import "./components/qualities";
 
 /* ABOUT US */
 @import "./components/aboutus";
