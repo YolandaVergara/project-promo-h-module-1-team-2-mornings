@@ -8,12 +8,15 @@
 }
 
 a {
+   color: white;
   &:link,
   &:visited,
   &:hover,
   &:active {
-    text-decoration: none;
-    color: white;
+    text-decoration: none;  
+    }
+    .footer & {
+      color: #54585a;
   }
 }
 
