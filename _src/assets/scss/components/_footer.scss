@@ -12,6 +12,7 @@
     line-height: 20px;
     text-align: center;
 
+
   }
 
   &__menu {
@@ -28,6 +29,7 @@
 
   &__logo {
     margin: 0 auto;
+
   }
 }
 
@@ -35,22 +37,19 @@
 
 @media all and (min-width: 768px) {
   .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px, 90px, 45px;
+    padding: 30px 45px 60px 45px;
 
-
-
-
-    padding: 24px 45px 6px 45px;
-
-
-    &__copyright,
-    &__menu,
-    &__logo {
-      width: 50%;
+    &__menu {
       padding: 0px;
+      grid-row: 1/3;
     }
 
     &__copyright {
-      padding-top: 6px;
+      grid-row: 1/2;
+      text-align: left;
+
     }
 
     &__menu__list {
@@ -61,20 +60,15 @@
       margin: 0px;
     }
 
-    &__copyright {
-      text-align: left;
-    }
-
     &__logo {
-      position: relative;
-      bottom: 55px;
       width: 116px;
+      margin: 0px;
     }
   }
 }
 
 @media all and (min-width: 1200px) {
   .footer {
-    padding: 24px 138px 6px 138px;
+    padding: 30px 138px 47px 138px;
   }
 }
