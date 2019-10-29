@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/61294e7035.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact</title>
+
+  </head>
+
+  <body class="contact">
+    <partial src="_header.html"></partial>
+    <div class="contact__hero">
+    <div class="info">
+      <h1 class="info__title">Contacto</h1>
+      <p class="info_text">
+        ¿Quieres saber más? ¿Ponerte en contacto con nosotras? Rellena este
+        formulario y estaremos encantadas de conocerte.
+      </p>
+      <p>
+        <small class="info__small"
+          >Todos los campos marcados con * son obligatorios.</small
+        >
+      </p>
+    </div>
+    <form class="form" action="signup" method="POST">
+      <label for="fullName" class="label">Nombre Completo*</label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Nombre..."
+        required
+      />
+      <label for="email" class="label">Email*</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="nombre.apellidos@mail.com"
+        required
+      />
+      <label for="phone" class="label">Teléfono</label>
+      <input type="tel" id="phone" name="phone" placeholder="Ej: 123456789" />
+      <label for="comments">Mensaje</label>
+      <textarea
+        id="comments"
+        name="comments"
+        rows="6"
+        cols="60"
+        class="label"
+        placeholder="¿Qué necesitas?"
+      ></textarea>
+      <input" type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
