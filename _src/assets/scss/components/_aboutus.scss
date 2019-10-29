@@ -1,6 +1,6 @@
 .individual {
   &__description {
-    padding-top: 30px;
+    padding: 30px 15px 0px 15px;
 
   }
 
@@ -10,6 +10,8 @@
     line-height: 45px;
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 30px;
+
   }
 
   &__title {
@@ -17,27 +19,8 @@
     font-family: $fontOpensans;
     font-size: 20px;
     line-height: 45px;
-    margin: 0;
   }
-}
 
-.anchor__who {
-  display: block;
-  position: relative;
-  top: -110px;
-  visibility: hidden;
-}
-
-.adalabers {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.individual {
   &__image__adalaber {
     max-height: 180px;
     box-sizing: border-box;
@@ -55,7 +38,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0 30px;
   }
 
   &__text {
@@ -63,13 +45,26 @@
   }
 }
 
+.anchor__who {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
+}
 
-
+.adalabers {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 45px 0px;
+}
 
 .logos {
   color: $fontColor;
   box-sizing: border-box;
-  padding: 5px;
+  padding-top: 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -89,15 +84,52 @@
   .adalabers {
     flex-direction: row;
     min-width: 400px;
+    padding: 30px 0px;
+  }
+
+  &__image__adalaber {
+    max-height: 180px;
+    box-sizing: border-box;
+    border: solid 5px;
+    border-color: rgba(0, 0, 0, 0.08);
+    margin: 0;
+  }
+
+  &__bio {
+    font-family: $fontOpensans;
+    line-height: 24px;
+    color: #54585a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__text {
+    text-align: center;
   }
 
   .individual {
+    &__description {
+      padding: 45px 45px 30px 45px;
+    }
+
     &__bio {
       align-items: flex-start;
+      padding-left: 30px;
     }
 
     &__text {
       text-align: left;
+    }
+
+    &__description__title {
+      padding-bottom: 15px;
+    }
+
+    &__image__adalaber {
+      max-height: 205px;
     }
   }
 
@@ -109,6 +141,7 @@
 
   .adalabers:nth-child(even) .individual__bio {
     align-items: flex-end;
+    padding: 0px 30px 0px 0px;
   }
 
   .adalabers:nth-child(even) .individual__bio .individual__text {
@@ -120,8 +153,28 @@
   }
 }
 
-@media all and (min-width: 1024px) {
-  .individual__description {
-    padding: 30px 138px 0 138px;
+@media all and (min-width: 1200px) {
+  .individual {
+    &__description {
+      padding: 45px 138px 30px 138px;
+
+    }
+
+    &__bio {
+      align-items: flex-start;
+      padding-left: 45px;
+    }
+
+    &__text {
+      max-width: 550px;
+    }
+    &__image__adalaber {
+      max-height: 278px;
+    }
+
+  }
+
+  .adalabers:nth-child(even) .individual__bio {
+    padding: 0px 45px 0px 0px;
   }
 }
