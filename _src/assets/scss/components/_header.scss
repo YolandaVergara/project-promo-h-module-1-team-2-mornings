@@ -18,6 +18,7 @@
   &__team__name {
     margin: 1.5rem;
     text-transform: capitalize;
+    font-size: 1.6rem;
   }
 
   &__team__name__yes {
@@ -51,6 +52,7 @@
     text-decoration: none;
     font-weight: 50rem;
     text-transform: uppercase;
+    font-size: 1.6rem;
   }
 
   &__who {
@@ -80,5 +82,15 @@
     &__menu__options {
       justify-content: flex-end;
     }
+  }
+}
+
+@media all and (min-width: 1200px){
+
+  nav__team{
+    font-size: 1.5rem;
+  }
+  hero__claim {
+    font-size: 2.4rem;
   }
 }
