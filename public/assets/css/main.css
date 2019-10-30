@@ -619,7 +619,6 @@ a:link,a:visited,a:hover,a:active {
 
   .footer {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px, 90px, 45px;
     padding: 30px 45px 60px 45px;
   }
 
