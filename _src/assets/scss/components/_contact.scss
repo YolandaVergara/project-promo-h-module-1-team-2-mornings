@@ -105,6 +105,12 @@
       text-transform: uppercase;
       font-weight: 600;
       font-size: 16px;
+      transition: all ease 1s;
+
+    }
+    &__button:hover {
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+      background-color: #1c756c;
     }
   }
 
