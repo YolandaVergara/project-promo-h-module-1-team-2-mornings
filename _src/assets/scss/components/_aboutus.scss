@@ -24,7 +24,6 @@
 
   &__image__adalaber {
     max-height: 180px;
-    box-sizing: border-box;
     border: solid 5px;
     border-color: rgba(0, 0, 0, 0.08);
     margin: 0;
@@ -45,6 +44,28 @@
     text-align: center;
     font-size: 1.6rem;
   }
+
+  &__logos {
+    color: $fontColor;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 124px;
+
+
+    &__list:not(:first-child) {
+      list-style-type: disc;
+      color: black;
+      align-self: center;
+      font-size: 8px;
+    }
+
+    &__link {
+      font-size: 15px;
+    }
+
+  }
 }
 
 .anchor__who {
@@ -63,21 +84,11 @@
   padding: 0px 0px 45px 0px;
 }
 
-.logos {
-  color: $fontColor;
-  box-sizing: border-box;
-  padding-top: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 .fab,
 .fas {
   color: $fontColor;
-  margin-right: 10px;
 }
-
 
 
 @media all and (min-width: 768px) {
@@ -170,6 +181,7 @@
     &__text {
       max-width: 550px;
     }
+
     &__image__adalaber {
       max-height: 278px;
     }

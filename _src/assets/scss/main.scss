@@ -1,4 +1,4 @@
-@import './core/variables.';
+@import "./core/variables.";
 
 * {
   margin: 0px;
@@ -20,6 +20,9 @@ a {
   .footer & {
     color: #54585a;
   }
+
+
+
 }
 
 html {
@@ -28,7 +31,7 @@ html {
 }
 
 /* HEADER */
-@import 'components/header';
+@import "components/header";
 
 /* HERO */
 @import "./components/hero";
@@ -41,6 +44,9 @@ html {
 
 /* ABOUT US */
 @import "./components/aboutus";
+
+/* CONTACT */
+@import "./components/contact";
 
 /* FOOTER  */
 @import "./components/footer";
