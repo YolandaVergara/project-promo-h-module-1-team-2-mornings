@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,54 +27,20 @@
         </p>
       </div>
       <form class="form" action="https://formspree.io/moqapyry" method="POST">
-        <label class="form__items__label" for="fullName"
-          >Nombre Completo<span class="form__asterisc">*</span></label
-        >
-        <input
-          class="form__items__box"
-          type="text"
-          id="fullName"
-          name="fullName"
-          placeholder="Nombre..."
-          required
-        />
+        <label class="form__items__label" for="fullName">Nombre Completo<span class="form__asterisc">*</span></label>
+        <input class="form__items__box" type="text" id="fullName" name="fullName" placeholder="Nombre..." required/>
         <div class="form__items">
           <div class="form__items__email">
-            <label class="form__items__label" for="email"
-              >Email<span class="form__asterisc">*</span></label
-            >
-            <input
-              class=" form__items__box--email"
-              type="email"
-              id="email"
-              name="email"
-              value="nombre.apellidos@mail.com"
-              required
-            />
+            <label class="form__items__label" for="email">Email<span class="form__asterisc">*</span></label>
+            <input class=" form__items__box--email" type="email" id="email" name="email" value="nombre.apellidos@mail.com" required/>
           </div>
           <div class="form__items__phone">
             <label class="form__items__label" for="phone">Teléfono</label>
-            <input
-              class="form__items__box--phone"
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Ej: 123456789"
-            />
+            <input class="form__items__box--phone" type="tel" id="phone" name="phone" placeholder="Ej: 123456789"/>
           </div>
         </div>
-        <label class="form__items__label" for="comments"
-          >Mensaje<span class="form__asterisc">*</span></label
-        >
-        <textarea
-          class="form__items__comment"
-          id="comments"
-          name="comments"
-          rows="6"
-          cols="1"
-          placeholder="¿Qué necesitas?"
-          required
-        ></textarea>
+        <label class="form__items__label" for="comments">Mensaje<span class="form__asterisc">*</span></label>
+        <textarea class="form__items__comment" id="comments" name="comments" rows="6" cols="1" placeholder="¿Qué necesitas?" required></textarea>
         <input class="form__items__button" type="submit" value="Enviar" />
       </form>
     </div>
