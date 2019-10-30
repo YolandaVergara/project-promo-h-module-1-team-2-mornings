@@ -4,20 +4,19 @@
   width: 100%;
   background-color: rgba(9, 157, 142, 0.9);
   color: white;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 3rem;
   font-family: rubik;
-  justify-content: center;
   align-items: center;
   position: fixed;
   z-index: 1;
   opacity: 0.9;
-  box-sizing: border-box;
-  font-weight: 500px;
+  font-weight: 500;
 
   &__team__name {
-    margin: 15px;
+    margin: 1.5rem;
     text-transform: capitalize;
+    font-size: 1.6rem;
   }
 
   &__team__name__yes {
@@ -25,9 +24,6 @@
   }
 
   &__menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: rgba(20, 217, 197, 0.9);
     width: 100%;
   }
@@ -35,6 +31,7 @@
   &__menu__options {
     display: flex;
     width: 100%;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -46,15 +43,14 @@
   &__who,
   &__contact {
     color: white;
-    box-sizing: border-box;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: 500px;
+    padding: 1rem;
+    font-weight: 500;
     text-transform: uppercase;
+    font-size: 1.6rem;
   }
 
   &__who {
-    min-width: 140px;
+    min-width: 14rem;
   }
 }
 
@@ -64,12 +60,11 @@
   .header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 30px 0px 30px;
-    align-items: baseline;
+    padding: 0rem 3rem 0rem 3rem;
+    // align-items: center;
 
     &__team__name {
       min-width: 35%;
-
     }
 
     &__menu {
@@ -80,5 +75,12 @@
     &__menu__options {
       justify-content: flex-end;
     }
+  }
+}
+
+@media all and (min-width: 1200px){
+
+  .nav__team{
+    font-size: 1.5rem;
   }
 }

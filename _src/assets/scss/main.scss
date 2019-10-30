@@ -21,9 +21,13 @@ a {
   .footer & {
     color: #54585a;
   }
+}
 
+//RESET FONT TO 10PX
 
-
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
 }
 
 /* HEADER */
