@@ -379,7 +379,7 @@ a:link,a:visited,a:hover,a:active {
   color: #54585a;
 }
 
-.form__items--phone {
+.form__items__phone {
   padding: 13px 0px 7px 0px;
 }
 
@@ -400,6 +400,7 @@ a:link,a:visited,a:hover,a:active {
   height: 45px;
   border: solid 1px #54585a;
   padding-left: 15px;
+  margin-top: 7px;
 }
 
 .form__items__box--phone {
@@ -407,6 +408,7 @@ a:link,a:visited,a:hover,a:active {
   height: 45px;
   border: solid 1px #54585a;
   padding-left: 15px;
+  margin-top: 7px;
 }
 
 .form__items__comment {
@@ -732,6 +734,9 @@ a:link,a:visited,a:hover,a:active {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;

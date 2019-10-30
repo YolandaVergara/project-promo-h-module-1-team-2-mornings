@@ -49,10 +49,9 @@
       margin: 13px 0px 7px 0px;
       font-size: 14px;
       color: $textColor;
-
     }
 
-    &--phone {
+    &__phone {
       padding: 13px 0px 7px 0px;
     }
 
@@ -72,6 +71,7 @@
         height: 45px;
         border: solid 1px $textColor;
         padding-left: 15px;
+        margin-top: 7px;
       }
 
       &--phone {
@@ -79,6 +79,7 @@
         height: 45px;
         border: solid 1px $textColor;
         padding-left: 15px;
+        margin-top: 7px;
       }
     }
 
@@ -126,6 +127,7 @@
     &__items {
       display: flex;
       flex-direction: row;
+      align-items: center;
       justify-content: space-between;
 
       &__email {
