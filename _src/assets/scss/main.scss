@@ -8,16 +8,23 @@
 }
 
 a {
-   color: white;
+  color: white;
+
   &:link,
   &:visited,
   &:hover,
   &:active {
-    text-decoration: none;  
-    }
-    .footer & {
-      color: #54585a;
+    text-decoration: none;
   }
+
+  .footer & {
+    color: #54585a;
+  }
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
 }
 
 /* HEADER */
