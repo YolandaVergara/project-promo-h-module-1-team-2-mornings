@@ -60,6 +60,7 @@
     &__phone {
       padding-top: 1.3rem;
       font-size: 1.4rem;
+    
     }
 
     &__email {
@@ -167,11 +168,11 @@
       justify-content: space-between;
 
       &__email {
-        width: 39.5rem;
+        width: 65%;
       }
 
       &__phone {
-        width: 16.2rem;
+        width: 30%;
       }
 
       &__button {

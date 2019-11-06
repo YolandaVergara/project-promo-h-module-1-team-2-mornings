@@ -768,11 +768,11 @@ html {
   }
 
   .form__items__email {
-    width: 39.5rem;
+    width: 65%;
   }
 
   .form__items__phone {
-    width: 16.2rem;
+    width: 30%;
   }
 
   .form__items__button {
