@@ -421,8 +421,8 @@ a:link,a:visited,a:hover,a:active {
     margin-top: 0px;
   }
 
-  .container__qualities__weaknesses {
-    margin-left: 10px;
+  .qualities__description {
+    text-align: center;
   }
 
   .adalabers {
