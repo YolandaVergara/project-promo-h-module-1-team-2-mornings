@@ -35,9 +35,7 @@
       font-size: 1.2rem;
     }
   }
-
 }
-
 
 .form {
   display: flex;
@@ -49,18 +47,15 @@
     display: flex;
     flex-direction: column;
 
-
     &__label {
       margin: 1.3rem 0rem 0.7rem 0rem;
       font-size: 1.4rem;
       color: $textColor;
-
     }
 
     &__phone {
       padding-top: 1.3rem;
       font-size: 1.4rem;
-    
     }
 
     &__email {
@@ -73,7 +68,6 @@
       font-size: 1.4rem;
       border: solid 0.1rem #b8b8b9;
       width: 100%;
-
 
       &--email {
         width: 100%;
@@ -100,7 +94,6 @@
       border: solid 0.1rem #b8b8b9;
       font-size: 1.4rem;
       font-family: $fontOpensans;
-
     }
 
     &__button {
@@ -114,7 +107,6 @@
       font-weight: 600;
       font-size: 1.6rem;
       transition: all ease 1s;
-
     }
 
     &__button:hover {
@@ -129,12 +121,12 @@
 }
 
 @media all and (min-width: 768px) {
-  .contact__hero {
-    background-image: url(../images/background__contact_320.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 30rem;
-  }
+.contact__hero {
+background-image: url(../images/background__contact_320.jpg);
+background-size: cover;
+width: 100%;
+height: 30rem;
+}
 
   .form {
     &__container {
@@ -150,10 +142,10 @@
 
 @media all and (min-width: 1200px) {
   .contact__hero {
-    background-image: url(../images/background__contact_1200.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 40rem;
+  background-image: url(../images/background__contact_1200.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 40rem;
   }
 
   .form {

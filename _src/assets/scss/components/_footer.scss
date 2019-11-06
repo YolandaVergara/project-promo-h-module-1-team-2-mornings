@@ -29,8 +29,6 @@
   }
 }
 
-
-
 @media all and (min-width: 768px) {
   .footer {
     grid-template-columns: 1fr 1fr;
@@ -45,7 +43,6 @@
     &__copyright {
       grid-row: 1/2;
       text-align: left;
-
     }
 
     &__menu__list {
