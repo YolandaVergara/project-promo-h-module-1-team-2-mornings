@@ -21,7 +21,22 @@
 
   &__team__name__yes {
     text-transform: uppercase;
-  }
+    display: inline-block;
+    animation-name: jump;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+    }
+    @keyframes jump {
+      0% {
+        transform: scale(2);
+      }
+      50% {
+        transform: rotateY(1360deg);
+      }
+      100% {
+        transform: translateY(0)
+      }
+    }
 
   &__menu {
     background-color: rgba(20, 217, 197, 0.9);
@@ -61,7 +76,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0rem 3rem 0rem 3rem;
-    // align-items: center;
 
     &__team__name {
       min-width: 35%;

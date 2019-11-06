@@ -9,12 +9,17 @@
 
 a {
   color: white;
+  transition: all 0.5s ease-in-out;
 
   &:link,
   &:visited,
-  &:hover,
   &:active {
     text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+    font-size: 2rem;
+    text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
   }
 
   .footer & {
