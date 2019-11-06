@@ -1,4 +1,4 @@
-@import './core/variables.';
+@import "./core/variables.";
 
 * {
   margin: 0px;
@@ -8,20 +8,29 @@
 }
 
 a {
-   color: white;
+  color: white;
+
   &:link,
   &:visited,
   &:hover,
   &:active {
-    text-decoration: none;  
-    }
-    .footer & {
-      color: #54585a;
+    text-decoration: none;
+  }
+
+  .footer & {
+    color: #54585a;
   }
 }
 
+//RESET FONT TO 10PX
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
 /* HEADER */
-@import 'components/header';
+@import "components/header";
 
 /* HERO */
 @import "./components/hero";
@@ -34,6 +43,9 @@ a {
 
 /* ABOUT US */
 @import "./components/aboutus";
+
+/* CONTACT */
+@import "./components/contact";
 
 /* FOOTER  */
 @import "./components/footer";

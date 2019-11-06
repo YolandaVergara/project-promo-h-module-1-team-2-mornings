@@ -1,0 +1,178 @@
+.contact{
+&__hero {
+  background-image: url(../images/background__contact_320ult.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+&__info {
+  padding: 15px 15px 45px 15px;
+  font-family: $fontOpensans;
+  line-height: 24px;
+  font-size: 16px;
+  color: $textColor;
+
+  &__title{
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $fontColor;
+    font-family: $fontRubik;
+    line-height: 45px;
+    margin-top: 30px;
+  }
+  &__text {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+  &--small{
+      text-align: center;
+      padding-top: 20px;
+      font-size: 12px; 
+}
+}
+
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 15px 60px 15px;
+  font-family: $fontOpensans;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+      margin: 13px 0px 7px 0px;
+      font-size: 14px;
+      color: $textColor;
+    }
+
+    &__phone {
+      padding-top: 13px;
+    }
+
+    &__email {
+      padding-top: 13px;
+    }
+
+    &__box {
+      height: 45px;
+      padding-left: 15px;
+      font-size: 14px;
+      border: solid 1px #b8b8b9;
+      width: 100%;
+      font-family: $fontOpensans;
+
+      &--email {
+        width: 100%;
+        height: 45px;
+        border: solid 1px #b8b8b9;
+        padding-left: 15px;
+        margin-top: 7px;
+        font-size: 16px;
+      }
+
+      &--phone {
+        width: 100%;
+        height: 45px;
+        border: solid 1px #b8b8b9;
+        padding-left: 15px;
+        margin-top: 7px;
+        font-size: 14px;
+      }
+    }
+
+    &__comment {
+      padding-left: 15px;
+      padding-top: 11px;
+      border: solid 1px #b8b8b9;
+      font-size: 14px;
+      font-family: $fontOpensans;
+    }
+
+    &__button {
+      margin-top: 30px;
+      height: 45px;
+      border-radius: 4px;
+      background-color: $fontColor;
+      color: white;
+      font-family: $fontOpensans;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all ease 1s;
+
+    }
+    &__button:hover {
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+      background-color: #1c756c;
+    }
+  }
+
+  &__asterisc {
+    color: $fontColor;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .contact__hero {
+    background-image: url(../images/background__contact_320.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+  }
+  .form{
+    &__container {
+      padding: 0px 148px;
+    }
+    &__items__button {
+      width: 206px;
+      align-self: flex-end;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .contact__hero {
+    background-image: url(../images/background__contact_1200.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
+  .form {
+    &__container {
+      padding: 0px 285px;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      &__email {
+        width: 395px;
+      }
+
+      &__phone {
+        width: 162px;
+      }
+
+      &__button {
+        width: 278px;
+        margin-bottom: 60px;
+      }
+
+      &__direction {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+      }
+    }
+  }
+}
