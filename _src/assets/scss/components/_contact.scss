@@ -1,37 +1,40 @@
-.contact{
-&__hero {
-  background-image: url(../images/background__contact_320ult.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-}
-&__info {
-  padding: 15px 15px 45px 15px;
-  font-family: $fontOpensans;
-  line-height: 24px;
-  font-size: 16px;
-  color: $textColor;
+.contact {
+  &__hero {
+    background-image: url(../images/background__contact_320ult.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+  }
 
-  &__title{
-    font-size: 24px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $fontColor;
-    font-family: $fontRubik;
-    line-height: 45px;
-    margin-top: 30px;
-  }
-  &__text {
-    text-align: center;
-    margin: 0 auto;
-    width: 90%;
-  }
-  &--small{
+  &__info {
+    padding: 1.5rem 1.5rem 4.5rem 1.5rem;
+    font-family: $fontOpensans;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    color: $textColor;
+
+    &__title {
+      font-size: 2.4rem;
+      text-transform: uppercase;
       text-align: center;
-      padding-top: 20px;
-      font-size: 12px; 
-}
-}
+      color: $fontColor;
+      font-family: $fontRubik;
+      line-height: 4.5rem;
+      margin-top: 3rem;
+    }
+
+    &__text {
+      text-align: center;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    &--small {
+      text-align: center;
+      padding-top: 2rem;
+      font-size: 1.2rem;
+    }
+  }
 
 }
 
@@ -39,75 +42,80 @@
 .form {
   display: flex;
   flex-direction: column;
-  padding: 2px 15px 60px 15px;
+  padding: 0.2rem 1.5rem 6rem 1.5rem;
   font-family: $fontOpensans;
 
   &__items {
     display: flex;
     flex-direction: column;
 
+
     &__label {
-      margin: 13px 0px 7px 0px;
-      font-size: 14px;
+      margin: 1.3rem 0rem 0.7rem 0rem;
+      font-size: 1.4rem;
       color: $textColor;
+
     }
 
     &__phone {
-      padding-top: 13px;
+      padding-top: 1.3rem;
+      font-size: 1.4rem;
     }
 
     &__email {
-      padding-top: 13px;
+      padding-top: 1.3rem;
     }
 
     &__box {
-      height: 45px;
-      padding-left: 15px;
-      font-size: 14px;
-      border: solid 1px #b8b8b9;
+      height: 4.5rem;
+      padding-left: 1.5rem;
+      font-size: 1.4rem;
+      border: solid 0.1rem #b8b8b9;
       width: 100%;
-      font-family: $fontOpensans;
+
 
       &--email {
         width: 100%;
-        height: 45px;
-        border: solid 1px #b8b8b9;
-        padding-left: 15px;
-        margin-top: 7px;
-        font-size: 16px;
+        height: 4.5rem;
+        border: solid 0.1rem #b8b8b9;
+        padding-left: 1.5rem;
+        margin-top: 0.7rem;
+        font-size: 1.4rem;
       }
 
       &--phone {
         width: 100%;
-        height: 45px;
-        border: solid 1px #b8b8b9;
-        padding-left: 15px;
-        margin-top: 7px;
-        font-size: 14px;
+        height: 4.5rem;
+        border: solid 0.1rem #b8b8b9;
+        padding-left: 1.5rem;
+        margin-top: 0.7rem;
+        font-size: 1.4rem;
       }
     }
 
     &__comment {
-      padding-left: 15px;
-      padding-top: 11px;
-      border: solid 1px #b8b8b9;
-      font-size: 14px;
+      padding-left: 1.5rem;
+      padding-top: 1.1rem;
+      border: solid 0.1rem #b8b8b9;
+      font-size: 1.4rem;
       font-family: $fontOpensans;
+
     }
 
     &__button {
-      margin-top: 30px;
-      height: 45px;
-      border-radius: 4px;
+      margin-top: 3rem;
+      height: 4.5rem;
+      border-radius: 0.4rem;
       background-color: $fontColor;
       color: white;
       font-family: $fontOpensans;
       text-transform: uppercase;
       font-weight: 600;
-      font-size: 16px;
+      font-size: 1.6rem;
       transition: all ease 1s;
 
     }
+
     &__button:hover {
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
       background-color: #1c756c;
@@ -124,14 +132,16 @@
     background-image: url(../images/background__contact_320.jpg);
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 30rem;
   }
-  .form{
+
+  .form {
     &__container {
-      padding: 0px 148px;
+      padding: 0rem 14.8rem;
     }
+
     &__items__button {
-      width: 206px;
+      width: 20.6rem;
       align-self: flex-end;
     }
   }
@@ -142,11 +152,12 @@
     background-image: url(../images/background__contact_1200.jpg);
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 40rem;
   }
+
   .form {
     &__container {
-      padding: 0px 285px;
+      padding: 0px 28.5rem;
     }
 
     &__items {
@@ -156,15 +167,15 @@
       justify-content: space-between;
 
       &__email {
-        width: 395px;
+        width: 39.5rem;
       }
 
       &__phone {
-        width: 162px;
+        width: 16.2rem;
       }
 
       &__button {
-        width: 278px;
+        width: 27.8rem;
         margin-bottom: 60px;
       }
 
